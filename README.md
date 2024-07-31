@@ -1,6 +1,6 @@
 # KnowU
 
-Welcome to the KnowU repository! This repository serves as an assets, manual, and source for the AppSheet app, KnowU.
+Welcome to the KnowU repository! This repository serves as an assets, manual, and source for the low-code app, KnowU.
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ Thank you for using KnowU!
 
 ## Manuals
 
-Manuals are found in 
+Manuals are found in [manual](manual/) folder
 
 ## Contact
 
