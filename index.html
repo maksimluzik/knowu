@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KnowU - Assets</title>
+    <title>KnowU - He who knows others is wise, he who knows himself is enlightened</title>
+    <link rel="icon" href="/media/know-u-icon-round.png" type="image/x-icon">
     <!-- Link to a Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <style type="text/css">
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0fcff;
-            color: #333;
+            color: #424242;
+            box-sizing: border-box;
         }
+
         .container {
             text-align: center;
             background-color: #fff;
@@ -25,27 +29,178 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 600px;
+            width: 100%;
             margin: 20px;
+            position: relative;
         }
-        img {
-            width: 100px;
+
+        .phrase {
+            font-size: 0.8em;
+        }
+
+        img.logo {
+            max-width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 15px; /* Rounded corners */
+            border-radius: 15px;
+            /* Rounded corners */
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin: 0;
+
+        ul.list li {
+            text-align: left;
+        }
+
+        .banners {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .banners img {
+            width: 200px;
+            /* Adjust as necessary */
+            margin: 10px;
+            border-radius: 10px;
+            /* Match the style */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background: rgba(224, 247, 250, 0.9);
+            /* Light blue matching the theme */
+            border: 2px solid #00BFC6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 1.5em;
+            color: #00BFC6;
+            /* Match the blue theme */
+            font-weight: bold;
+            text-align: center;
+            z-index: 1;
+            pointer-events: none;
+            /* Make sure it does not block clicks */
+        }
+
+        .banners-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .form-group {
+            text-align: left;
+            background-color: #e0f7fa;
+            /* Light bluish color to reflect KnowU page */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #424242;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+            /* Ensure padding is consistent */
+        }
+
+        .form-container button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00BFC6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #008a9e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .banners img {
+                width: 150px;
+                /* Smaller width for smaller screens */
+            }
+
+            .overlay {
+                font-size: 1.2em;
+                padding: 5px 10px;
+            }
+
+            .form-group {
+                padding: 20px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img alt="KnowU Icon" src="/media/know-u-icon.png" />
-        <p>“He who knows others is wise, he who knows himself is enlightened” -Lao Tzu</p>
+        <img class="logo" alt="KnowU Logo" src="/media/know-u-banner-logo.png" />
+        <p class="phrase">“He who knows others is wise, he who knows himself is enlightened” &mdash; Lao Tzu</p>
         <br />
-        <p>KnowU is a comprehensive tool for personal and professional growth, combining self-assessment, peer feedback, and social media insights to help you understand and enhance your personality and relationships.</p>
+        <h2>What is KnowU?</h2>
+        <p>KnowU is a comprehensive tool for personal and professional growth, combining self-assessment, peer feedback,
+            and social media insights to help you understand and enhance your personality and relationships.</p>
+        <div class="banners-container">
+            <div class="banners">
+                <div class="overlay">Release in Q3/2024</div>
+                <img alt="Download on the App Store" src="/media/badges/ios.webp" />
+                <img alt="Get it on Google Play" src="/media/badges/android.webp" />
+                <img alt="Access on the Web" src="/media/badges/web.webp" />
+            </div>
+        </div>
+        <h2>Join Our First Adopters of KnowU</h2>
+        <p>Interested in being one of the first to use KnowU? Sign up now to:</p>
+        <ul class="list">
+            <li>Access New Features Early: Be the first to try out our latest tools.</li>
+            <li>Shape the App: Provide feedback to help us improve.</li>
+            <li>Stay Informed: Get updates and news about KnowU.</li>
+        </ul>
+        <p>Join us on this journey of personal and professional growth. Sign up today!</p>
+        
+        <div class="form-group">
+            <div class="form-container">
+                <form action="https://formspree.io/f/xblroorb" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
