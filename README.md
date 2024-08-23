@@ -32,9 +32,9 @@ Use KnowU to enhance your personal development, improve relationships, and advan
 
 To get started with KnowU, you have three options
 
-* Using it via browser: navigate with to: https://knowu.app/
-* Installing Android version: (coming soon)
-* Installing iPhone version: (coming soon)
+* Using it via browser: navigate with to: https://me.knowu.app/
+* Installing Android version: https://play.google.com/apps/internaltest/4701433817876898981 (internal testing)
+* Installing iPhone version: https://apps.apple.com/app/knowu/id6630383351 (internal testing)
 
 Thank you for using KnowU!
 
