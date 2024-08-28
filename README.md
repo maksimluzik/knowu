@@ -38,9 +38,9 @@ To get started with KnowU, you have three options
 
 Thank you for using KnowU!
 
-## Manuals
+## Website
 
-Manuals are found in [manual](manual/) folder
+KnowU website is available at [https://knowu.app](https://knowu.app). Manual will be later added to the site [https://knowu.app/manual](https://knowu.app/manual)
 
 ## Contact
 
