@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: "KnowU"
+title: "Home"
 ---
 
 <p class="phrase">“He who knows others is wise, he who knows himself is enlightened” &mdash;Lao Tzu</p>
