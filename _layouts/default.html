@@ -14,13 +14,11 @@
   </style>
 </head>
 <body>
-  <div class="header">
-    <a href="/"><img class="logo" alt="KnowU Logo" src="/media/logo.svg" /></a>
-  </div>
-  <div class="container">
-    <div class="inner-container">
-        {{ content | prepend: site.baseurl }}
+    {% include header.html %}
+    <div class="container">
+        <div class="inner-container">
+            {{ content | prepend: site.baseurl }}
+        </div>
     </div>
-  </div>
 </body>
 </html>

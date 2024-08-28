@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="header-logo">
+    <a href="/" class="logo-link">
+      <img class="logo" alt="KnowU Logo" src="/media/logo.svg" />
+    </a>
+  </div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <ul class="navbar-links">
+        {% for link in site.nav_links %}
+        <li class="navbar-item">
+          <a class="navbar-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>

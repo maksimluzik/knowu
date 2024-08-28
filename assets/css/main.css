@@ -12,7 +12,18 @@ body {
     flex-direction: column;
 }
 
-.header {
+.site-header {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #e0f7fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-logo {
     width: 100%;
     background-color: #e0f7fa;
     padding: 10px 0;
@@ -25,10 +36,62 @@ body {
     height: 100px;
 }
 
-.header img {
+.header-logo img {
     max-height: 100%;
     max-width: 100%;
     height: auto;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #e0f7fa; /* Background color of the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the navbar */
+    position: fixed; /* Fixes navbar to the top */
+    width: 100%; /* Full width */
+    height: 45px;
+    z-index: 1000; /* Ensures navbar is on top */
+    top: 120px;
+    left: 0;
+    text-align: center; /* Center-aligns the navigation container */
+  }
+  
+.navbar-container {
+    max-width: 1200px; /* Max width for content inside the navbar */
+    margin: 0 auto; /* Centers the content inside the navbar */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Spacing between logo and links */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding around the content */
+}
+  
+.navbar-logo {
+    font-size: 1.5em; /* Size of the logo text */
+    font-weight: bold; /* Bold font for logo */
+    color: #00BFC6; /* Color for logo */
+    text-decoration: none; /* Removes underline from the link */
+}
+  
+.navbar-links {
+    list-style: none; /* Removes bullet points from list */
+    margin: 0; /* Removes margin from list */
+    padding: 0; /* Removes padding from list */
+    display: flex; /* Displays list items in a row */
+    gap: 20px; /* Space between links */
+}
+  
+.navbar-item {
+    display: inline-block; /* Makes list items inline */
+}
+  
+.navbar-link {
+    color: #424242; /* Color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Bold font for links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+  
+.navbar-link:hover {
+    color: #008a9e; /* Hover color for links */
 }
 
 .container {
@@ -40,7 +103,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 650px;
     width: 100%;
-    margin: 140px 20px 20px; /* Adjusted margin to account for fixed header */
+    margin: 185px 20px 20px; /* Adjusted margin to account for fixed header */
     position: relative;
 }
 

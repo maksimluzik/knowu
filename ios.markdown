@@ -4,8 +4,7 @@ title: iOS
 permalink: /ios/
 ---
 
-THIS IS IOS PAGE!
-
+## 1st step
 
 https://apps.apple.com/us/app/testflight/id899247664
 
