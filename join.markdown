@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Join Our First Adopters of KnowU
+title: Join us
 permalink: /join/
 ---
 

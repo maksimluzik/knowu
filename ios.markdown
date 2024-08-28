@@ -1,11 +1,11 @@
 ---
 layout: page
-title: iOS
+title: iOS installation
 permalink: /ios/
 ---
 
 ## 1st step
-Get an invitation from KnowU, send your details via [this form](https://knowu.app/join/). After you have received confirmation via email that you provided in the form proceed to step 2.
+To get an invitation from KnowU, please submit your details using [this form](https://knowu.app/join/). Once you receive a confirmation email at the address you provided, you can move on to Step 2.
 
 ## 2nd step
 You need to install TestFligh application on your phone from [App Store](https://apps.apple.com/us/app/testflight/id899247664). This is normal process and pre-requirement for apps that have not yet been publicly published on App Store.

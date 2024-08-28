@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: He who knows others is wise, he who knows himself is enlightened
+title: KnowU
 email: support@knowu.app
 description: >- # this means to ignore newlines until "baseurl:"
   KnowU is a comprehensive tool for personal and professional growth, combining self-assessment, peer feedback, and social media insights to help you understand and enhance your personality and relationships.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://knowu.app" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: knowu
-github_username:  knowu
+#twitter_username: knowu-service
+github_username:  maksimluzik/knowu
 
 # Google Analytics
 google_analytics: G-62TNKGTWE2

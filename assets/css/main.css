@@ -12,6 +12,16 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none; /* Removes underline */
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+  
+a:hover {
+    color: #0056b3; /* Link hover color */
+}
+
 .site-header {
     display: block;
     position: relative;
@@ -221,6 +231,53 @@ ul.list li {
 .form-container button:hover {
     background-color: #008a9e;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the footer */
+.site-footer {
+    background-color: #ffffff; /* Footer background color */
+    margin: 50px 0 0 0;
+    padding: 0; /* Padding around the footer content */
+    text-align: center; /* Center text alignment for footer content */
+    width: 100%; /* Full width footer */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+}
+
+.footer-container {
+    max-width: 1200px; /* Adjust as necessary for your site */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 15px; /* Adds padding for spacing */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+  
+/* Styles for footer navigation */
+.footer-nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Flex container for links */
+    gap: 20px; /* Space between links */
+}
+  
+.footer-nav li {
+    display: inline-block; /* Displays list items inline */
+}
+  
+  /* Social icons styling */
+.footer-social a {
+    margin: 0 10px; /* Margin between social icons */
+    color: #333; /* Icon color */
+}
+  
+.footer-social a:hover {
+    color: #007bff; /* Icon hover color */
+}
+  
+/* Ensure that svg icons are properly sized */
+  .svg-icon {
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+    vertical-align: middle; /* Aligns icons vertically with text */
 }
 
 @media (max-width: 768px) {
