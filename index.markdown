@@ -11,7 +11,7 @@ title: "Home"
 <h2>What is KnowU?</h2>
 <p>KnowU is a comprehensive tool for personal and professional growth, combining self-assessment, peer feedback,
     and social media insights to help you understand and enhance your personality and relationships.</p>
-<h2>Interested in Joining as an Internal Tester?</h2>
+<h2>Interested in joining as an Internal Tester?</h2>
 <p>Navigate to the form <a href="/join">here</a> to join the internal tester group.</p>
 <p>After you receive an invite in your email, follow these instructions below how to install the interal testing version of the KnowU.</p>
 <div class="banners-container">
