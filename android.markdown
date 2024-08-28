@@ -4,19 +4,17 @@ title: About
 permalink: /android/
 ---
 
-THIS IS ANDROID PAGE!
 
-https://play.google.com/apps/internaltest/4701433817876898981
+## 1st step
+Get an invitation from KnowU, send your details via [this form](https://knowu.app/join/). After you have received confirmation via email that you provided in the form proceed to step 2.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## 2nd step
+Navigate on your phone or computer here and accept the invite: https://play.google.com/apps/internaltest/4701433817876898981
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Accept the invite, you should see this screen after accepting it. Move to 3rd step.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## 3rd step
+Follow the link from the accept state or navigate with your mobile here: https://play.google.com/store/apps/details?id=app.mxm.knowu&hl=en-US&ah=AiHcSzx6-s7YxPO-9JYLhIVHYDE to install the app on your Android
 
-
-[jekyll-organization]: https://github.com/jekyll
+## Updates
+When new versions are released to the KnowU app you will be able to update the app via Google Play. Similar way when you installed the app in the first place. Note that the application name might show as *app.mxm.knowu (unreviewed)* instead of just KnowU

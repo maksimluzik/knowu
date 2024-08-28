@@ -59,7 +59,7 @@ plugins:
 nav_links:
   - title: "Home"
     url: "/"
-  - title: "Join"
+  - title: "Join us"
     url: "/join"
   - title: "iOS installation"
     url: "/ios"

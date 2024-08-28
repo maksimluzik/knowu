@@ -5,18 +5,21 @@ permalink: /ios/
 ---
 
 ## 1st step
+Get an invitation from KnowU, send your details via [this form](https://knowu.app/join/). After you have received confirmation via email that you provided in the form proceed to step 2.
 
-https://apps.apple.com/us/app/testflight/id899247664
+## 2nd step
+You need to install TestFligh application on your phone from [App Store](https://apps.apple.com/us/app/testflight/id899247664). This is normal process and pre-requirement for apps that have not yet been publicly published on App Store.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+[![TestFlight App](/media/testflight-icon.png)](https://apps.apple.com/us/app/testflight/id899247664)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+## 3rd step
+Open your TestFligh app on your phone and you should see KnowU application there. Install it.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+![Install KnowU via TestFlight app](/media/testflight-example.png)
 
+You are done! You can now find KnowU app in your phone like a regular app.
 
-[jekyll-organization]: https://github.com/jekyll
+![You can now use KnowU app normally as any other iOS app](/media/ios-example.png)
+
+## Updates
+When new versions are released to the KnowU app you will be able to update the app via TestFlight. Similar way when you installed the app in the first place.
