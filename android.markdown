@@ -9,7 +9,7 @@ permalink: /android/
 To get an invitation from KnowU, please submit your details using [this form](https://knowu.app/join/). Once you receive a confirmation email at the address you provided, you can move on to Step 2.
 
 ## 2nd step
-Navigate on your phone or computer here and accept the invite: [https://play.google.com/apps/internaltest/4701433817876898981](https://play.google.com/apps/internaltest/4701433817876898981)
+Navigate on your phone or computer here and accept the invite in [Google Play](https://play.google.com/apps/internaltest/4701433817876898981)
 ![KnowU app invitation in Google Play](/media/android-invited-program.png)
 
 After accepting the invite you should see this screen. Move to 3rd step.
