@@ -50,4 +50,4 @@ For any questions or inquiries, please contact:
 
 ## Tech stuff
 
-Running Jekyll locally: `bundle exec jekyll serve`
+Running Jekyll locally: `bundle exec jekyll serve`. In case of errors, run `bundle install` first.
