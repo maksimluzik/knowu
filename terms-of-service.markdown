@@ -1,3 +1,9 @@
+---
+layout: page
+title: Terms of Service
+permalink: /terms-of-service/
+---
+
 # Terms of Service for KnowU
 
 ## 1. Acceptance of Terms

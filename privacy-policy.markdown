@@ -1,3 +1,9 @@
+---
+layout: page
+title: Privacy Policy
+permalink: /privacy-policy/
+---
+
 # Privacy Policy for KnowU
 
 ## 1. Introduction

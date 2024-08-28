@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+  <link rel="icon" href="/media/know-u-icon-round.png" type="image/x-icon">
+  
+  <!-- Link to Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <style type="text/css">
+    /* Insert your custom styles here */
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="/"><img class="logo" alt="KnowU Logo" src="/media/logo.svg" /></a>
+  </div>
+  <div class="container">
+    {{ content | prepend: site.baseurl }}
+  </div>
+</body>
+</html>

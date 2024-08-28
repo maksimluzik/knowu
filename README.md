@@ -47,3 +47,7 @@ Manuals are found in [manual](manual/) folder
 For any questions or inquiries, please contact:
 
 * Maksim Luzik [Maksim Luzik](https://www.maksimluzik.com) or [me@maksimluzik.com](mailto:me@maksimluzik.com)
+
+## Tech stuff
+
+Running Jekyll locally: `bundle exec jekyll serve`
