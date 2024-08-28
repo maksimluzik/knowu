@@ -61,6 +61,8 @@ plugins:
 nav_links:
   - title: "Home"
     url: "/"
+  - title: "Join"
+    url: "/join"
   - title: "iOS installation"
     url: "/ios"
   - title: "Android installation"

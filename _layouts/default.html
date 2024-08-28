@@ -18,7 +18,9 @@
     <a href="/"><img class="logo" alt="KnowU Logo" src="/media/logo.svg" /></a>
   </div>
   <div class="container">
-    {{ content | prepend: site.baseurl }}
+    <div class="inner-container">
+        {{ content | prepend: site.baseurl }}
+    </div>
   </div>
 </body>
 </html>
