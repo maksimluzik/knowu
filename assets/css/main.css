@@ -116,7 +116,7 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 650px;
     width: 100%;
-    margin: 185px 20px 20px; /* Adjusted margin to account for fixed header */
+    margin: 200px 20px 20px; /* Adjusted margin to account for fixed header */
     position: relative;
 }
 

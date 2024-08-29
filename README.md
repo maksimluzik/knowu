@@ -1,6 +1,6 @@
 # KnowU
 
-Welcome to the KnowU repository! This repository serves as an assets, manual, and source for the low-code app, KnowU.
+Welcome to the KnowU repository! This repository serves as an website, assets, manual, and source for the low-code app, KnowU.
 
 ## Table of Contents
 
@@ -8,7 +8,7 @@ Welcome to the KnowU repository! This repository serves as an assets, manual, an
 - [App Description](#app-description)
 - [Features](#features)
 - [Usage](#usage)
-- [Manuals](#manuals)
+- [Website](#website)
 - [Contact](#contact)
 
 ## Introduction
@@ -40,7 +40,7 @@ Thank you for using KnowU!
 
 ## Website
 
-KnowU website is available at [https://knowu.app](https://knowu.app). Manual will be later added to the site [https://knowu.app/manual](https://knowu.app/manual)
+KnowU website is available at [https://knowu.app](https://knowu.app). Manual will be added later to the site [https://knowu.app/manual](https://knowu.app/manual)
 
 ## Contact
 
