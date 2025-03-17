@@ -82,7 +82,7 @@ permalink: /evaluate/
             body: JSON.stringify({ rating: rating })
         })
         .then(response => response.json())
-        .then(data => alert("Your feedback has been registered. Thank you for your feedback!"))
+        .then(data => alert("Your evaluation has been registered. Thank you for your evaluation!"))
         .catch(error => alert("Unfortunately, an error occurred while submitting your evaluation. If error persist, please report the issue to support@knowu.app"));
     }
 </script>
