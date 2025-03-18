@@ -23,6 +23,11 @@ permalink: /evaluate/
         transition: opacity 0.3s;
     }
 
+    .rating.evaluated img {
+        opacity: 0.1; /* Reduce visibility when already evaluated */
+        pointer-events: none; /* Prevent further interaction */
+    }
+
     .rating img:hover ~ img {
         opacity: 0.1;
     }
@@ -97,6 +102,18 @@ permalink: /evaluate/
     var encodedQuestion = "";
     let selectedRating = null; // Variable to store selected rating
 
+    function setEvaluationCookie() {
+        const expirationDays = 365; // Cookie expires in 1 year
+        const expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + expirationDays);
+        document.cookie = `evaluated_${initiatorId}_${questionId}=true; expires=${expirationDate.toUTCString()}; path=/`;
+    }
+
+    function getEvaluationCookie() {
+        const cookieKey = `evaluated_${initiatorId}_${questionId}`;
+        return document.cookie.split('; ').some(cookie => cookie.startsWith(cookieKey + "="));
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
         hash = new URLSearchParams(window.location.search).get("hash");
         initiatorId = new URLSearchParams(window.location.search).get("initiatorId");
@@ -126,6 +143,20 @@ permalink: /evaluate/
                 highlightSelectedRating(i);
             };
             ratingContainer.appendChild(img);
+        }
+
+        if (getEvaluationCookie()) {
+            document.getElementById("rating-container").style.pointerEvents = "none";
+            document.getElementById("comment-input").disabled = true;
+            document.getElementById("submit-button").disabled = true;
+            // Add the evaluated class to reduce opacity
+            document.getElementById("rating-container").classList.add("evaluated");
+
+            // Show message indicating the user has already evaluated
+            const evaluationMessage = document.getElementById("evaluation-message");
+            evaluationMessage.innerText = "You have already evaluated this user for this question.";
+            evaluationMessage.style.display = "block";
+            return;
         }
 
         // Attach event listener to submit button
@@ -183,6 +214,9 @@ permalink: /evaluate/
             document.getElementById("comment-input").disabled = true; // Disable comment input
             document.getElementById("submit-button").disabled = true; // Disable submit button permanently
 
+            // Store evaluation cookie to prevent duplicate submissions
+            setEvaluationCookie();
+
             // Show evaluation message
             const evaluationMessage = document.getElementById("evaluation-message");
             evaluationMessage.innerText = "Thank you for evaluating this user! Your vote has been registered.";
@@ -207,7 +241,7 @@ permalink: /evaluate/
 </script>
 
 <div class="evaluation-container">
-    <p id="question-text">On a scale of 1 to 10, how likely am I to ...</p>
+    <h3 id="question-text">On a scale of 1 to 10, how likely am I to ...</h3>
     <p class="small-description">A lower rating indicates a lower evaluation for the given question, meaning the trait or characteristic being assessed is perceived as less evident or prominent. Your evaluations are anonymous.</p>
     <div class="rating" id="rating-container"></div>
     <textarea id="comment-input" placeholder="Optional: Add a comment about this evaluation" rows="3" style="width: 100%; margin-top: 10px;"></textarea>
