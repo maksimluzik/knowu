@@ -3,17 +3,18 @@ layout: page
 title: A user has requested an evaluation from you with the following question
 permalink: /evaluate/
 ---
+
 <style>
     .rating {
         display: flex;
         justify-content: space-between; /* Distributes images evenly */
         align-items: center;
         width: 100%;
-        padding: 0px; /* Adds padding on both sides */
+        padding: 10px 0; /* Add space above and below */
+        flex-wrap: wrap; /* Allow items to wrap if needed */
     }
 
     .rating img {
-        flex-grow: 1; /* Makes images stretch within the container */
         width: 30px;
         max-width: 10%; /* Ensures images don't become too large */
         cursor: pointer;
@@ -23,7 +24,11 @@ permalink: /evaluate/
     }
 
     .rating img:hover ~ img {
-        opacity: 0.5;
+        opacity: 0.1;
+    }
+
+    div.evaluation-container {
+        display: block;
     }
 
     p.small-description {
@@ -42,9 +47,47 @@ permalink: /evaluate/
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         z-index: 1000;
     }
-</style>
 
-<link rel="preload" href="/media/ratings/rating-small.png" as="image" type="image/png">
+    #comment-input {
+        display: block;
+        width: 100%;
+        max-width: 100%; /* Ensure it stays within the parent container */
+        box-sizing: border-box; /* Prevents the element from exceeding container width */
+        margin-top: 15px; /* Maintain spacing */
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        resize: vertical; /* Allow resizing but prevent overlap */
+        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif; /* KnowU default font */
+        font-size: 16px;
+        color: #424242; /* KnowU text color */
+        background-color: #FBFEFF; /* KnowU background color */
+    }
+
+    #submit-button {
+        display: block;
+        width: 100%; /* Makes button stretch fully */
+        margin-top: 10px;
+        padding: 12px;
+        background-color: #00BFC6; /* KnowU primary color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.1s;
+    }
+
+    #submit-button:hover {
+        background-color: #0097A7; /* Slightly darker cyan on hover */
+    }
+
+    #submit-button:active {
+        background-color: #00788A; /* Even darker shade on click */
+        transform: scale(0.98); /* Slight press effect */
+    }
+</style>
 
 <script>
     var hash = "";
@@ -52,6 +95,7 @@ permalink: /evaluate/
     var traitId = "";
     var questionId = "";
     var encodedQuestion = "";
+    let selectedRating = null; // Variable to store selected rating
 
     document.addEventListener("DOMContentLoaded", function () {
         hash = new URLSearchParams(window.location.search).get("hash");
@@ -60,7 +104,6 @@ permalink: /evaluate/
         questionId = new URLSearchParams(window.location.search).get("questionId");
         encodedQuestion = new URLSearchParams(window.location.search).get("encodedQuestion");
 
-        // Decode Base64-encoded question
         if (encodedQuestion) {
             try {
                 const decodedQuestion = atob(encodedQuestion);
@@ -71,43 +114,63 @@ permalink: /evaluate/
             }
         }
 
-        // Generate rating buttons (1-10 scale)
         const ratingContainer = document.getElementById("rating-container");
+
         for (let i = 1; i <= 10; i++) {
             const img = document.createElement("img");
             img.src = `/media/ratings/rating.png`;
             img.alt = `Rating ${i}`;
             img.title = `Rating ${i}`;
-            img.onclick = function() { submitRating(i); };
+            img.onclick = function() { 
+                selectedRating = i;
+                highlightSelectedRating(i);
+            };
             ratingContainer.appendChild(img);
         }
+
+        // Attach event listener to submit button
+        document.getElementById("submit-button").addEventListener("click", function() {
+            submitRating();
+        });
     });
 
-    // Submit rating function
-    function submitRating(rating) {
-        if (!questionId || !traitId || !initiatorId || !hash || !encodedQuestion) {
-            alert("Missing required data to submit evaluation. Please make sure that the link is the correct one.");
-            return; // Stop the function execution
+    // Function to highlight selected rating
+    function highlightSelectedRating(rating) {
+        document.querySelectorAll(".rating img").forEach((img, index) => {
+            img.style.opacity = index < rating ? "1" : "0.3"; // Highlight selected rating
+        });
+    }
+
+    // Function to submit evaluation
+    function submitRating() {
+        if (!selectedRating) {
+            alert("Please select a rating before submitting.");
+            return;
         }
 
+        if (!questionId || !traitId || !initiatorId || !hash || !encodedQuestion) {
+            alert("Missing required data to submit evaluation. Please make sure that the link is the correct one.");
+            return;
+        }
+
+        const comment = document.getElementById("comment-input").value.trim();
         const endpointBase = "https://script.google.com/macros/s/AKfycbxm4vkKZMhDO1r-rPZcc_bgd3FcsdxpbZG7Tk3Ukr7-U6EzJMv6Tigic5eIHgVmzV-X/exec";
-        const requestUrl = `${endpointBase}?endpoint=evaluate_user&questionId=${questionId}&rating=${rating}&traitId=${traitId}&initiatorId=${initiatorId}&hash=${hash}&encodedQuestion=${encodedQuestion}`;
+        const requestUrl = `${endpointBase}?endpoint=evaluate_user&hash=${hash}&questionId=${questionId}&traitId=${traitId}&initiatorId=${initiatorId}&encodedQuestion=${encodedQuestion}&rating=${selectedRating}&comment=${encodeURIComponent(comment)}`;
 
         // Create a popup to indicate submission in progress
         const popup = document.createElement("div");
         popup.id = "rating-popup";
         popup.innerText = "Submitting your evaluation...";
-        
         document.body.appendChild(popup);
 
-        // Disable all rating buttons to prevent multiple submissions
-        document.querySelectorAll(".rating img").forEach(img => img.style.pointerEvents = "none");
+        // Disable submit button to prevent multiple submissions
+        document.getElementById("submit-button").disabled = true;
 
         fetch(requestUrl, {
             redirect: "follow",
             method: "POST",
             headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify({ rating: rating })
+            body: JSON.stringify({ rating: selectedRating, comment: comment })
         })
         .then(response => response.json())
         .then(data => {
@@ -115,35 +178,27 @@ permalink: /evaluate/
                 throw new Error(data.error);
             }
             popup.innerText = `Your evaluation has been registered. Thank you!`;
-            const ratingContainer = document.getElementById("rating-container");
-            ratingContainer.innerHTML = ""; // Clear previous rating images
+            
+            document.getElementById("rating-container").style.pointerEvents = "none"; // Disable rating selection
+            document.getElementById("comment-input").disabled = true; // Disable comment input
+            document.getElementById("submit-button").disabled = true; // Disable submit button permanently
 
-            // Display the selected rating using rating-small.png images
-            for (let i = 1; i <= 10; i++) {
-                const img = document.createElement("img");
-                img.src = "/media/ratings/rating-small.png";
-                img.alt = `Rating ${i}`;
-                img.style.opacity = i <= rating ? "1" : "0.3"; // Highlight selected rating
-                img.style.margin = "5px";
-                ratingContainer.appendChild(img);
-            }
-
-            // Only disable further interactions after a successful evaluation
-            ratingContainer.style.pointerEvents = "none";
-
-            // Show the thank-you message
-            const thankYouMessage = document.getElementById("thank-you-message");
-            thankYouMessage.innerText = "Thank you for evaluating this user! Your vote has been registered. You can close this window.";
-            thankYouMessage.style.display = "block";
+            // Show evaluation message
+            const evaluationMessage = document.getElementById("evaluation-message");
+            evaluationMessage.innerText = "Thank you for evaluating this user! Your vote has been registered.";
+            evaluationMessage.style.display = "block";
         })
         .catch(error => {
-            popup.innerText = `An error occurred while submitting your evaluation. Please try again. Error: ${error.message}`;
+            popup.innerText = `An error occurred while submitting your evaluation. Please try again.`;
+            
+            // Update evaluation message with the error
+            const evaluationMessage = document.getElementById("evaluation-message");
+            evaluationMessage.innerText = `An error occurred: ${error.message}`;
+            evaluationMessage.style.display = "block";
 
-            // Re-enable rating buttons if an error occurs
-            document.querySelectorAll(".rating img").forEach(img => img.style.pointerEvents = "auto");
+            document.getElementById("submit-button").disabled = false; // Re-enable submit button
         })
         .finally(() => {
-            // Keep the popup visible for a few seconds, then remove it
             setTimeout(() => {
                 document.body.removeChild(popup);
             }, 5000);
@@ -151,9 +206,11 @@ permalink: /evaluate/
     }
 </script>
 
-<div>
+<div class="evaluation-container">
     <p id="question-text">On a scale of 1 to 10, how likely am I to ...</p>
     <p class="small-description">A lower rating indicates a lower evaluation for the given question, meaning the trait or characteristic being assessed is perceived as less evident or prominent. Your evaluations are anonymous.</p>
     <div class="rating" id="rating-container"></div>
-    <p id="thank-you-message" class="small-description" style="display: none; text-align: center; margin-top: 10px;"></p>
+    <textarea id="comment-input" placeholder="Optional: Add a comment about this evaluation" rows="3" style="width: 100%; margin-top: 10px;"></textarea>
+    <p id="evaluation-message" class="small-description" style="display: none; text-align: center; margin-top: 10px;"></p>
+    <button id="submit-button" style="display: block;">Submit Evaluation</button>
 </div>
