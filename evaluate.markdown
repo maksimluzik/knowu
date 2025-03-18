@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A user has requested an evaluation from you with the following question
+title: An acquaintance has asked you to evaluate this question
 permalink: /evaluate/
 ---
 
