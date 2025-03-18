@@ -85,8 +85,13 @@ permalink: /evaluate/
 
     // Submit rating function
     function submitRating(rating) {
+        if (!questionId || !traitId || !initiatorId || !hash || !encodedQuestion) {
+            alert("Missing required data to submit evaluation. Please make sure that the link is the correct one.");
+            return; // Stop the function execution
+        }
+
         const endpointBase = "https://script.google.com/macros/s/AKfycbxm4vkKZMhDO1r-rPZcc_bgd3FcsdxpbZG7Tk3Ukr7-U6EzJMv6Tigic5eIHgVmzV-X/exec";
-        const requestUrl = `${endpointBase}?endpoint=evaluate_user&questionId=${questionId}&rating=${rating}&traitId=${traitId}&initiatorId=${initiatorId}&hash=${hash}12&encodedQuestion=${encodedQuestion}`;
+        const requestUrl = `${endpointBase}?endpoint=evaluate_user&questionId=${questionId}&rating=${rating}&traitId=${traitId}&initiatorId=${initiatorId}&hash=${hash}&encodedQuestion=${encodedQuestion}`;
 
         // Create a popup to indicate submission in progress
         const popup = document.createElement("div");
@@ -147,8 +152,8 @@ permalink: /evaluate/
 </script>
 
 <div>
-    <p id="question-text">On a scale of 1 to 10, how likely am I to spontaneously suggest a karaoke night, even if I can't sing?</p>
-    <p class="small-description">A lower rating indicates a lower evaluation for the given question, meaning the trait or characteristic being assessed is perceived as less evident or prominent.</p>
+    <p id="question-text">On a scale of 1 to 10, how likely am I to ...</p>
+    <p class="small-description">A lower rating indicates a lower evaluation for the given question, meaning the trait or characteristic being assessed is perceived as less evident or prominent. Your evaluations are anonymous.</p>
     <div class="rating" id="rating-container"></div>
     <p id="thank-you-message" class="small-description" style="display: none; text-align: center; margin-top: 10px;"></p>
 </div>
