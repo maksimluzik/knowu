@@ -29,6 +29,19 @@ permalink: /evaluate/
     p.small-description {
         font-size: 0.7em;
     }
+
+    #rating-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 30%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
 </style>
 
 <link rel="preload" href="/media/ratings/rating-small.png" as="image" type="image/png">
@@ -73,7 +86,17 @@ permalink: /evaluate/
     // Submit rating function
     function submitRating(rating) {
         const endpointBase = "https://script.google.com/macros/s/AKfycbxm4vkKZMhDO1r-rPZcc_bgd3FcsdxpbZG7Tk3Ukr7-U6EzJMv6Tigic5eIHgVmzV-X/exec";
-        const requestUrl = `${endpointBase}?endpoint=evaluate_user&questionId=${questionId}&rating=${rating}&traitId=${traitId}&initiatorId=${initiatorId}&hash=${hash}&encodedQuestion=${encodedQuestion}`;
+        const requestUrl = `${endpointBase}?endpoint=evaluate_user&questionId=${questionId}&rating=${rating}&traitId=${traitId}&initiatorId=${initiatorId}&hash=${hash}12&encodedQuestion=${encodedQuestion}`;
+
+        // Create a popup to indicate submission in progress
+        const popup = document.createElement("div");
+        popup.id = "rating-popup";
+        popup.innerText = "Submitting your evaluation...";
+        
+        document.body.appendChild(popup);
+
+        // Disable all rating buttons to prevent multiple submissions
+        document.querySelectorAll(".rating img").forEach(img => img.style.pointerEvents = "none");
 
         fetch(requestUrl, {
             redirect: "follow",
@@ -82,8 +105,44 @@ permalink: /evaluate/
             body: JSON.stringify({ rating: rating })
         })
         .then(response => response.json())
-        .then(data => alert("Your evaluation has been registered. Thank you for your evaluation!"))
-        .catch(error => alert("Unfortunately, an error occurred while submitting your evaluation. If error persist, please report the issue to support@knowu.app"));
+        .then(data => {
+            if (data.error) {
+                throw new Error(data.error);
+            }
+            popup.innerText = `Your evaluation has been registered. Thank you!`;
+            const ratingContainer = document.getElementById("rating-container");
+            ratingContainer.innerHTML = ""; // Clear previous rating images
+
+            // Display the selected rating using rating-small.png images
+            for (let i = 1; i <= 10; i++) {
+                const img = document.createElement("img");
+                img.src = "/media/ratings/rating-small.png";
+                img.alt = `Rating ${i}`;
+                img.style.opacity = i <= rating ? "1" : "0.3"; // Highlight selected rating
+                img.style.margin = "5px";
+                ratingContainer.appendChild(img);
+            }
+
+            // Only disable further interactions after a successful evaluation
+            ratingContainer.style.pointerEvents = "none";
+
+            // Show the thank-you message
+            const thankYouMessage = document.getElementById("thank-you-message");
+            thankYouMessage.innerText = "Thank you for evaluating this user! Your vote has been registered. You can close this window.";
+            thankYouMessage.style.display = "block";
+        })
+        .catch(error => {
+            popup.innerText = `An error occurred while submitting your evaluation. Please try again. Error: ${error.message}`;
+
+            // Re-enable rating buttons if an error occurs
+            document.querySelectorAll(".rating img").forEach(img => img.style.pointerEvents = "auto");
+        })
+        .finally(() => {
+            // Keep the popup visible for a few seconds, then remove it
+            setTimeout(() => {
+                document.body.removeChild(popup);
+            }, 5000);
+        });
     }
 </script>
 
@@ -91,4 +150,5 @@ permalink: /evaluate/
     <p id="question-text">On a scale of 1 to 10, how likely am I to spontaneously suggest a karaoke night, even if I can't sing?</p>
     <p class="small-description">A lower rating indicates a lower evaluation for the given question, meaning the trait or characteristic being assessed is perceived as less evident or prominent.</p>
     <div class="rating" id="rating-container"></div>
+    <p id="thank-you-message" class="small-description" style="display: none; text-align: center; margin-top: 10px;"></p>
 </div>
