@@ -15,12 +15,26 @@ permalink: /evaluate/
     }
 
     .rating img {
-        width: 30px;
-        max-width: 10%; /* Ensures images don't become too large */
+        width: 8vw; /* Scale dynamically with viewport width */
+        max-width: 30px; /* Prevent excessive scaling */
         cursor: pointer;
         margin: 5px;
         opacity: 1.0;
         transition: opacity 0.3s;
+    }
+
+    @media (max-width: 480px) {
+        .rating img {
+            max-width: 20px; /* Ensure better visibility on small screens */
+        }
+    }
+
+    .rating-label {
+        text-align: center;
+        font-size: 0.8em;
+        color: #666;
+        display: block;
+        margin-top: -5px;
     }
 
     .rating.evaluated img {
@@ -134,6 +148,11 @@ permalink: /evaluate/
         const ratingContainer = document.getElementById("rating-container");
 
         for (let i = 1; i <= 10; i++) {
+            const container = document.createElement("div");
+            container.style.display = "flex";
+            container.style.flexDirection = "column";
+            container.style.alignItems = "center";
+
             const img = document.createElement("img");
             img.src = `/media/ratings/rating.png`;
             img.alt = `Rating ${i}`;
@@ -142,7 +161,14 @@ permalink: /evaluate/
                 selectedRating = i;
                 highlightSelectedRating(i);
             };
-            ratingContainer.appendChild(img);
+
+            const label = document.createElement("span");
+            label.className = "rating-label";
+            label.innerText = i;
+
+            container.appendChild(img);
+            container.appendChild(label);
+            ratingContainer.appendChild(container);
         }
 
         if (getEvaluationCookie()) {
