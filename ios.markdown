@@ -8,12 +8,12 @@ permalink: /ios/
 To get an invitation from KnowU, please submit your details using [this form](https://knowu.app/join/). Once you receive a confirmation email at the address you provided, you can move on to Step 2.
 
 ## 2nd step
-You need to install TestFligh application on your phone from [App Store](https://apps.apple.com/us/app/testflight/id899247664). This is normal process and pre-requirement for apps that have not yet been publicly published on App Store.
+You need to install the TestFlight application on your phone from [App Store](https://apps.apple.com/us/app/testflight/id899247664). This is the normal process and a prerequisite for apps that have not yet been publicly published on the App Store.
 
 [![TestFlight App](/media/testflight-icon.png)](https://apps.apple.com/us/app/testflight/id899247664)
 
 ## 3rd step
-Open your TestFligh app on your phone and you should see KnowU application there. Install it.
+Open your TestFlight app on your phone and you should see the KnowU application there. Install it.
 
 ![Install KnowU via TestFlight app](/media/testflight-example.png)
 
