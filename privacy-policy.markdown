@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Privacy Policy
+description: "KnowU Privacy Policy - Learn how we protect your personal data, handle social media insights, and maintain privacy in our personality assessment platform."
+keywords: "KnowU privacy policy, data protection, personal information security"
 permalink: /privacy-policy/
 ---
 

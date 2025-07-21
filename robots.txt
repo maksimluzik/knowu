@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow scrapers and test directories
+User-agent: *
+Disallow: /scrapers/
+Disallow: /_site/
+Disallow: /.git/
+
+# Sitemap location
+Sitemap: https://knowu.app/sitemap.xml
+
+# Crawl delay (optional, be considerate to smaller crawlers)
+Crawl-delay: 1

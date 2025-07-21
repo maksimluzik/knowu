@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Terms of Service
+description: "KnowU Terms of Service - User obligations, service description, and legal terms for using our personality assessment and personal growth platform."
+keywords: "KnowU terms of service, user agreement, legal terms"
 permalink: /terms-of-service/
 ---
 

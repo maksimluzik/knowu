@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Android installation
+description: "Download and install KnowU personality assessment app on Android devices. Complete guide for Google Play internal testing program access."
+keywords: "KnowU Android app, Google Play installation, personality app Android, download KnowU"
 permalink: /android/
 ---
 

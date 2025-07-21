@@ -1,6 +1,8 @@
 ---
 layout: page
 title: iOS installation
+description: "Download and install KnowU personality assessment app on iOS devices. Step-by-step guide for TestFlight installation and internal testing access."
+keywords: "KnowU iOS app, TestFlight installation, personality app iOS, download KnowU iPhone"
 permalink: /ios/
 ---
 

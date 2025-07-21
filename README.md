@@ -50,7 +50,7 @@ For any questions or inquiries, please contact:
 
 ## Tech stuff
 
-Running Jekyll locally: `bundle exec jekyll serve`. In case of errors, run `bundle install` first.
+Running Jekyll locally: `bundle exec jekyll serve --livereload`. In case of errors, run `bundle install` first. To just build the website run `bundle exec jekyll build` --livereload`
 
 ## Jekyll documentation
 

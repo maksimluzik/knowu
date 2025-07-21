@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Join us
+description: "Join KnowU beta testing program and be among the first to experience our personality assessment tool. Early access to features, provide feedback, and shape the app's development."
+keywords: "KnowU beta testing, join early access, personality app beta, first adopters"
 permalink: /join/
 ---
 
