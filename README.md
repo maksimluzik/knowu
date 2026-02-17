@@ -52,6 +52,12 @@ For any questions or inquiries, please contact:
 
 KnowU uses a carefully selected color palette that reflects professionalism, trust, and personal growth:
 
+### Tagline
+
+> **Discover Who You Truly Are**
+>
+> Personal growth through self-assessment, peer feedback, and actionable insights — powered by Myers-Briggs, DISC, and Big Five models.
+
 ### Color Palette
 
 - **Primary Color:** `#00BFC6` - A vibrant cyan that represents clarity, communication, and self-awareness
