@@ -10,7 +10,7 @@ This manual will guide you through using KnowU to discover insights about yourse
 
 ### Quick Start
 
-1. **Download the App** – Get KnowU from the [App Store](/ios/) or [Google Play](/android/)
+1. **Download the App** – Get KnowU from the [App Store](/ios/) or [Google Play](/android/) or use the [Web App](https://web.knowu.app)
 2. **Create Your Profile** – Sign up and complete a brief questionnaire to start building your personality profile
 3. **Take Your First Assessment** – Answer questions to build your personality profile
 4. **Explore Your Results** – Review your traits, strengths, and growth areas
