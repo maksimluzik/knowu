@@ -2,7 +2,7 @@
 .breadcrumb {
     margin-bottom: 20px;
     padding: 10px 0;
-    border-bottom: 1px solid #e0f7fa;
+    border-bottom: 1px solid rgba(0, 191, 198, 0.2);
 }
 
 .breadcrumb ol {
@@ -26,17 +26,74 @@
 }
 
 .breadcrumb a {
-    color: #007bff;
+    color: #00BFC6;
     text-decoration: none;
 }
 
 .breadcrumb a:hover {
     text-decoration: underline;
+    color: #003C58;
 }
 
 .breadcrumb li[aria-current="page"] {
     color: #424242;
     font-weight: bold;
+}
+
+/* Typography improvements */
+h1 {
+    color: #003C58;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #003C58;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 191, 198, 0.2);
+}
+
+h3 {
+    color: #00BFC6;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #003C58;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+strong {
+    color: #003C58;
+    font-weight: 600;
 }
 
 /* Accessibility improvements */
@@ -85,28 +142,29 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f0fcff;
+    background-color: #FBFEFF;
     color: #424242;
     box-sizing: border-box;
     flex-direction: column;
 }
 
 a {
-    text-decoration: none; /* Removes underline */
-    color: #007bff; /* Link color */
-    transition: color 0.3s; /* Smooth color transition */
+    text-decoration: none;
+    color: #00BFC6;
+    transition: color 0.3s, opacity 0.3s;
 }
   
 a:hover {
-    color: #0056b3; /* Link hover color */
+    color: #003C58;
+    opacity: 0.8;
 }
 
 .site-header {
     display: block;
     position: relative;
     width: 100%;
-    background-color: #e0f7fa;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FBFEFF;
+    box-shadow: 0 2px 12px rgba(0, 60, 88, 0.08);
     top: 0;
     left: 0;
     z-index: 1000;
@@ -114,15 +172,15 @@ a:hover {
 
 .header-logo {
     width: 100%;
-    background-color: #e0f7fa;
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #FBFEFF;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 60, 88, 0.06);
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    height: 100px;
+    height: 90px;
 }
 
 .header-logo img {
@@ -133,69 +191,76 @@ a:hover {
 
 /* Navigation Bar Styles */
 .navbar {
-    background-color: #e0f7fa; /* Background color of the navbar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the navbar */
-    position: fixed; /* Fixes navbar to the top */
-    width: 100%; /* Full width */
-    height: 45px;
-    z-index: 1000; /* Ensures navbar is on top */
-    top: 120px;
+    background-color: #FBFEFF;
+    box-shadow: 0 2px 8px rgba(0, 60, 88, 0.06);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    top: 105px;
     left: 0;
-    text-align: center; /* Center-aligns the navigation container */
+    text-align: center;
+    border-top: 1px solid rgba(0, 191, 198, 0.1);
   }
   
 .navbar-container {
-    max-width: 1200px; /* Max width for content inside the navbar */
-    margin: 0 auto; /* Centers the content inside the navbar */
-    display: flex; /* Use Flexbox for layout */
-    justify-content: center; /* Spacing between logo and links */
-    align-items: center; /* Center items vertically */
-    padding: 10px 20px; /* Padding around the content */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
 }
   
 .navbar-logo {
-    font-size: 1.5em; /* Size of the logo text */
-    font-weight: bold; /* Bold font for logo */
-    color: #00BFC6; /* Color for logo */
-    text-decoration: none; /* Removes underline from the link */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00BFC6;
+    text-decoration: none;
 }
   
 .navbar-links {
-    list-style: none; /* Removes bullet points from list */
-    margin: 0; /* Removes margin from list */
-    padding: 0; /* Removes padding from list */
-    display: flex; /* Displays list items in a row */
-    gap: 20px; /* Space between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
 }
   
 .navbar-item {
-    display: inline-block; /* Makes list items inline */
+    display: inline-block;
 }
   
 .navbar-link {
-    color: #424242; /* Color for links */
-    text-decoration: none; /* Removes underline from links */
-    font-weight: bold; /* Bold font for links */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #424242;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.3px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
   
 .navbar-link:hover {
-    color: #008a9e; /* Hover color for links */
+    color: #00BFC6;
+    background-color: rgba(0, 191, 198, 0.05);
+    transform: translateY(-1px);
 }
 
 .container {
-    display: flex; /* Optional: use flexbox to layout content inside */
-    flex-direction: column; /* Optional: column layout inside main content */
-    flex: 1; /* This makes the main content area take up remaining space */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.8;
     background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 650px;
+    padding: 50px 60px;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px rgba(0, 60, 88, 0.08);
+    max-width: 750px;
     width: 100%;
-    margin: 200px 20px 20px; /* Adjusted margin to account for fixed header */
+    margin: 190px 20px 20px;
     position: relative;
 }
 
@@ -222,7 +287,14 @@ a:hover {
 }
 
 .phrase {
-    font-size: 1.5em;
+    font-size: 1.4em;
+    font-style: italic;
+    color: #003C58;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, rgba(0, 191, 198, 0.05) 0%, rgba(0, 60, 88, 0.05) 100%);
+    border-left: 4px solid #00BFC6;
+    border-radius: 6px;
+    margin: 20px 0;
 }
 
 ul.list li {
@@ -241,11 +313,17 @@ ul.list li {
 
 .banners img {
     width: 200px;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
     margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 100%; /* Responsive */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 60, 88, 0.12);
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banners img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 191, 198, 0.25);
 }
 
 .overlay {
@@ -275,11 +353,12 @@ ul.list li {
 
 .form-group {
     text-align: left;
-    background-color: #e0f7fa;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    background: linear-gradient(135deg, rgba(0, 191, 198, 0.03) 0%, rgba(0, 60, 88, 0.02) 100%);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 60, 88, 0.06);
+    margin-top: 30px;
+    border: 1px solid rgba(0, 191, 198, 0.15);
 }
 
 .form-container label {
@@ -292,69 +371,83 @@ ul.list li {
 .form-container input,
 .form-container textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px 16px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid rgba(0, 191, 198, 0.2);
+    border-radius: 8px;
     font-size: 1em;
     box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FBFEFF;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #00BFC6;
+    box-shadow: 0 0 0 3px rgba(0, 191, 198, 0.1);
+    outline: none;
 }
 
 .form-container button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #00BFC6;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #00BFC6 0%, #00a5ab 100%);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.05em;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 191, 198, 0.3);
 }
 
 .form-container button:hover {
-    background-color: #008a9e;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 191, 198, 0.4);
 }
 
 /* Styles for the footer */
 .site-footer {
-    background-color: #ffffff; /* Footer background color */
+    background: linear-gradient(180deg, #FBFEFF 0%, #f8fcfd 100%);
     margin: 50px 0 0 0;
-    padding: 0; /* Padding around the footer content */
-    text-align: center; /* Center text alignment for footer content */
-    width: 100%; /* Full width footer */
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 60, 88, 0.05);
+    border-top: 1px solid rgba(0, 191, 198, 0.1);
 }
 
 .footer-container {
-    max-width: 1200px; /* Adjust as necessary for your site */
-    margin: 0 auto; /* Centers the container */
-    padding: 0 15px; /* Adds padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in the width */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: #424242;
 }
   
 /* Styles for footer navigation */
 .footer-nav ul {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-    display: flex; /* Flex container for links */
-    gap: 20px; /* Space between links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
   
 .footer-nav li {
-    display: inline-block; /* Displays list items inline */
+    display: inline-block;
 }
   
   /* Social icons styling */
 .footer-social a {
-    margin: 0 10px; /* Margin between social icons */
-    color: #333; /* Icon color */
+    margin: 0 10px;
+    color: #003C58;
+    transition: color 0.3s ease;
 }
   
 .footer-social a:hover {
-    color: #007bff; /* Icon hover color */
+    color: #00BFC6;
 }
   
 /* Ensure that svg icons are properly sized */
@@ -367,7 +460,7 @@ ul.list li {
 @media (max-width: 768px) {
     .banners img {
         width: 150px;
-        height: auto; /* Maintain aspect ratio on mobile */
+        height: auto;
     }
 
     .overlay {
@@ -376,12 +469,36 @@ ul.list li {
     }
 
     .form-group {
-        padding: 20px;
+        padding: 25px;
     }
 
     .inner-container img {
         max-width: 350px;
     }
 
+    .container {
+        padding: 30px 25px;
+        margin: 180px 15px 15px;
+    }
 
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .navbar-links {
+        gap: 15px;
+    }
+
+    .navbar-link {
+        font-size: 0.9em;
+        padding: 6px 8px;
+    }
 }
