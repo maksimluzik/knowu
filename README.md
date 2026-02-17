@@ -32,7 +32,7 @@ Use KnowU to enhance your personal development, improve relationships, and advan
 
 To get started with KnowU, you have three options
 
-* Using it via browser: navigate with to: https://me.knowu.app/
+* Using it via browser: navigate with to: https://web.knowu.app/
 * Installing Android version: https://play.google.com/apps/internaltest/4701433817876898981 (internal testing)
 * Installing iPhone version: https://apps.apple.com/app/knowu/id6630383351 (internal testing)
 
@@ -47,6 +47,43 @@ KnowU website is available at [https://knowu.app](https://knowu.app). Manual wil
 For any questions or inquiries, please contact:
 
 * Maksim Luzik [Maksim Luzik](https://www.maksimluzik.com) or [me@maksimluzik.com](mailto:me@maksimluzik.com)
+
+## Branding
+
+KnowU uses a carefully selected color palette that reflects professionalism, trust, and personal growth:
+
+### Color Palette
+
+- **Primary Color:** `#00BFC6` - A vibrant cyan that represents clarity, communication, and self-awareness
+- **Secondary Color:** `#003C58` - A deep navy blue that conveys trust, stability, and depth
+- **Background Color:** `#FBFEFF` - A clean, light background that ensures excellent readability
+- **Text Color:** `#424242` - A dark gray that provides comfortable reading without harsh contrast
+
+### Usage Guidelines
+
+- Use the **Primary Color** (`#00BFC6`) for:
+  - Call-to-action buttons
+  - Links and interactive elements
+  - Accent colors and highlights
+  - Brand logo elements
+
+- Use the **Secondary Color** (`#003C58`) for:
+  - Headings and important text
+  - Footer elements
+  - Secondary buttons and accents
+  - Navigation hover states
+
+- Maintain the **Background Color** (`#FBFEFF`) for:
+  - Page backgrounds
+  - Card and container backgrounds
+  - Clean, professional layouts
+
+- Use the **Text Color** (`#424242`) for:
+  - Body text and paragraphs
+  - General content
+  - Form labels and descriptions
+
+The color palette is designed to be accessible, modern, and professional while maintaining the KnowU brand identity.
 
 ## Tech stuff
 

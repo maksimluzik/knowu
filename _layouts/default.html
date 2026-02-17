@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Title and Meta Description -->
-  {% if page.title %}
+  {% if page.title and page.title != "Home" %}
     <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
   {% else %}
     <title>{{ site.title | escape }} - Personal Growth Through Self-Assessment & Peer Feedback</title>
@@ -46,8 +46,10 @@
   <link rel="icon" href="/media/know-u-icon-round.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="/media/know-u-icon-round.png">
   
-  <!-- Link to Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+  <!-- Google Fonts — Open Sans with extended weights -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   
   <!-- JSON-LD Structured Data -->
@@ -74,21 +76,56 @@
   </script>
   
   {% include google-analytics.html %}
-  <style type="text/css">
-    /* Insert your custom styles here */
-  </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
     {% include header.html %}
-    <div class="container">
+    
+    {% if page.url == "/" %}
+    <!-- Hero Section — Homepage only -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Discover Who You Truly Are</h1>
+        <p class="hero-subtitle">Personal growth through self-assessment, peer feedback, and actionable insights — powered by Myers-Briggs, DISC, and Big Five models.</p>
+        <div class="hero-cta">
+          <a href="/join/" class="btn btn-primary">Get Early Access</a>
+          <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-outline">Try Web App</a>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <div class="container {% if page.url == '/' %}container--home{% endif %}">
         <div class="inner-container">
             {% include breadcrumbs.html %}
             <main id="main-content">
-                {{ content | prepend: site.baseurl }}
+                {{ content }}
             </main>
         </div>
     </div>
     {% include footer.html %}
+
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggle = document.querySelector('.navbar-toggle');
+        const links = document.querySelector('.navbar-links');
+        if (toggle && links) {
+          toggle.addEventListener('click', function() {
+            links.classList.toggle('open');
+            toggle.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', links.classList.contains('open'));
+          });
+          // Close menu when a link is clicked
+          links.querySelectorAll('.navbar-link').forEach(function(link) {
+            link.addEventListener('click', function() {
+              links.classList.remove('open');
+              toggle.classList.remove('open');
+              toggle.setAttribute('aria-expanded', 'false');
+            });
+          });
+        }
+      });
+    </script>
 </body>
 </html>

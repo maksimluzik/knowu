@@ -1,18 +1,23 @@
 <header class="site-header">
-  <div class="header-logo">
-    <a href="/" class="logo-link">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="KnowU Home">
       <img class="logo" alt="KnowU Logo" src="/media/logo.svg" />
     </a>
-  </div>
-  <nav class="navbar">
-    <div class="navbar-container">
+
+    <nav class="navbar" aria-label="Main navigation">
+      <button class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <ul class="navbar-links">
         {% for link in site.nav_links %}
-        <li class="navbar-item">
-          <a class="navbar-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        <li>
+          <a class="navbar-link{% if page.url == link.url %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>
         </li>
         {% endfor %}
+        <li class="navbar-cta">
+          <a class="btn btn-primary" href="https://web.knowu.app" target="_blank" rel="noopener">Open App</a>
+        </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
