@@ -27,6 +27,9 @@ url: "https://knowu.app" # the base hostname & protocol for your site, e.g. http
 #twitter_username: knowu-service
 github_username:  maksimluzik/knowu
 
+# Development server
+port: 8000
+
 # Google Analytics
 google_analytics: G-62TNKGTWE2
 
@@ -69,3 +72,5 @@ nav_links:
     url: "/android/"
   - title: "Manual"
     url: "/manual/"
+  - title: "Social"
+    url: "/social/"

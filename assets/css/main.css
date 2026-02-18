@@ -571,6 +571,282 @@ strong { color: #003C58; font-weight: 600; }
   color: rgba(255,255,255,0.5);
 }
 
+/* ---------- Social Cards ---------- */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(145deg, #fff 0%, #f8fcfd 100%);
+  border: 1px solid rgba(0,191,198,0.12);
+  border-radius: 16px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+  transition: height 0.3s ease;
+}
+
+.social-card--instagram::before {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-card--facebook::before {
+  background: linear-gradient(45deg, #0866FF 0%, #1877F2 100%);
+}
+
+.social-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,60,88,0.12);
+}
+
+.social-card:hover::before {
+  height: 6px;
+}
+
+.social-card__icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.social-card:hover .social-card__icon {
+  transform: scale(1.1);
+}
+
+.social-card--instagram .social-card__icon {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+}
+
+.social-card--facebook .social-card__icon {
+  background: linear-gradient(45deg, #0866FF 0%, #1877F2 100%);
+  color: #fff;
+}
+
+.social-card__icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.social-card__content {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.social-card__content h3 {
+  font-size: 1.35rem;
+  color: #003C58;
+  margin: 0 0 0.35rem;
+}
+
+.social-card__handle {
+  font-size: 0.95rem;
+  color: #00BFC6;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.social-card__desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.social-card__action {
+  margin-top: auto;
+}
+
+.btn-social {
+  background: transparent;
+  color: #003C58;
+  border: 2px solid rgba(0,60,88,0.2);
+  padding: 0.6rem 2rem;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.social-card--instagram:hover .btn-social {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.social-card--facebook:hover .btn-social {
+  background: #1877F2;
+  border-color: #1877F2;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .social-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .social-card__icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .social-card__icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ---------- Social Embeds ---------- */
+.embeds-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.embed-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.embed-column__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: #003C58;
+  margin: 0 0 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(0,191,198,0.15);
+}
+
+.embed-column__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.embed-column__icon--instagram {
+  color: #E4405F;
+}
+
+.embed-column__icon--facebook {
+  color: #1877F2;
+}
+
+.embed-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem;
+  flex: 1;
+}
+
+.embed-container--facebook {
+  background: #fff;
+  border: 1px solid rgba(0,191,198,0.12);
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.embed-container--facebook .fb-page,
+.embed-container--facebook .fb-page span,
+.embed-container--facebook .fb-page iframe {
+  width: 100% !important;
+}
+
+.embed-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0 0 1rem;
+  flex: 1;
+}
+
+.embed-grid--instagram {
+  background: linear-gradient(145deg, #fff 0%, #f8fcfd 100%);
+  border: 1px solid rgba(0,191,198,0.12);
+  border-radius: 16px;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.embed-grid .instagram-media {
+  margin: 0 0 1rem !important;
+  min-width: 280px;
+  max-width: 100%;
+  width: 100% !important;
+  border-radius: 12px !important;
+}
+
+.embed-grid .instagram-media:last-child {
+  margin-bottom: 0 !important;
+}
+
+.embed-cta {
+  text-align: center;
+  margin: 0;
+}
+
+.embed-cta .btn {
+  font-size: 0.88rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.fb-page {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .embeds-row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .embed-container--facebook,
+  .embed-grid--instagram {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .embed-grid .instagram-media {
+    min-width: 280px;
+  }
+}
+
 /* ---------- Misc ---------- */
 .overlay {
   position: absolute; top: 50%; left: 50%;

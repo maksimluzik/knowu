@@ -23,7 +23,7 @@ This manual will guide you through using KnowU to discover insights about yourse
 
 ### Need Help?
 
-If you have questions or run into any issues, reach out to us at [support@knowu.co](mailto:support@knowu.co).
+If you have questions or run into any issues, reach out to us at [support@knowu.app](mailto:support@knowu.app).
 
 ---
 
