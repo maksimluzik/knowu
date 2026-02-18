@@ -3,6 +3,7 @@ layout: default
 title: "Social"
 description: "Connect with KnowU on social media. Follow us on Instagram and Facebook for updates, tips, and insights on personal growth and self-discovery."
 keywords: "KnowU social media, Instagram, Facebook, follow us, personal growth community"
+permalink: /social/
 ---
 
 <h2>Follow Us</h2>
