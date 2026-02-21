@@ -10,9 +10,24 @@
       </button>
       <ul class="navbar-links">
         {% for link in site.nav_links %}
+        {% if link.children %}
+        <li class="navbar-dropdown-wrap">
+          <button class="navbar-link navbar-dropdown-toggle{% for child in link.children %}{% if page.url == child.url %} active{% endif %}{% endfor %}" aria-haspopup="true" aria-expanded="false">
+            {{ link.title }}<svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="navbar-dropdown" role="menu">
+            {% for child in link.children %}
+            <li role="none">
+              <a class="navbar-dropdown-link{% if page.url == child.url %} active{% endif %}" href="{{ child.url | relative_url }}" role="menuitem">{{ child.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% else %}
         <li>
           <a class="navbar-link{% if page.url == link.url %} active{% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>
         </li>
+        {% endif %}
         {% endfor %}
         <li class="navbar-cta">
           <a class="btn btn-primary" href="https://web.knowu.app" target="_blank" rel="noopener">Open App</a>

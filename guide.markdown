@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Getting Started
-permalink: /manual/
+permalink: /guide/
 ---
 
 ## Welcome to KnowU

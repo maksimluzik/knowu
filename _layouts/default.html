@@ -109,8 +109,8 @@
     {% include footer.html %}
 
     <script>
-      // Mobile menu toggle
       document.addEventListener('DOMContentLoaded', function() {
+        // Mobile hamburger toggle
         const toggle = document.querySelector('.navbar-toggle');
         const links = document.querySelector('.navbar-links');
         if (toggle && links) {
@@ -119,8 +119,8 @@
             toggle.classList.toggle('open');
             toggle.setAttribute('aria-expanded', links.classList.contains('open'));
           });
-          // Close menu when a link is clicked
-          links.querySelectorAll('.navbar-link').forEach(function(link) {
+          // Close menu when a flat nav link is clicked
+          links.querySelectorAll('.navbar-link:not(.navbar-dropdown-toggle)').forEach(function(link) {
             link.addEventListener('click', function() {
               links.classList.remove('open');
               toggle.classList.remove('open');
@@ -128,6 +128,32 @@
             });
           });
         }
+
+        // Mobile dropdown toggles (click-based; desktop uses CSS hover)
+        document.querySelectorAll('.navbar-dropdown-toggle').forEach(function(btn) {
+          btn.addEventListener('click', function(e) {
+            const wrap = btn.closest('.navbar-dropdown-wrap');
+            const isOpen = wrap.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen);
+            // Close other open dropdowns
+            document.querySelectorAll('.navbar-dropdown-wrap.open').forEach(function(other) {
+              if (other !== wrap) {
+                other.classList.remove('open');
+                other.querySelector('.navbar-dropdown-toggle').setAttribute('aria-expanded', 'false');
+              }
+            });
+          });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+          if (!e.target.closest('.navbar-dropdown-wrap')) {
+            document.querySelectorAll('.navbar-dropdown-wrap.open').forEach(function(wrap) {
+              wrap.classList.remove('open');
+              wrap.querySelector('.navbar-dropdown-toggle').setAttribute('aria-expanded', 'false');
+            });
+          }
+        });
       });
     </script>
 </body>
