@@ -592,6 +592,80 @@ strong { color: #003C58; font-weight: 600; }
   position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
 }
 
+/* ---------- Intro Video Section ---------- */
+.intro-video-section {
+  background: linear-gradient(160deg, #003C58 0%, #00626b 60%, #00BFC6 100%);
+  border-radius: 16px;
+  padding: 3.5rem 3rem;
+  margin: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-video-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(circle at 15% 40%, rgba(0,191,198,0.22) 0%, transparent 55%),
+    radial-gradient(circle at 85% 60%, rgba(0,60,88,0.3) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.intro-video-section__inner {
+  position: relative; z-index: 1;
+  text-align: center;
+}
+
+.intro-video-section__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #00BFC6;
+  margin-bottom: 0.6rem;
+}
+
+.intro-video-section__heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.intro-video-section__subtext {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 540px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.intro-video-section__player {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 64px rgba(0,0,0,0.45),
+    0 0 0 1px rgba(0,191,198,0.22),
+    0 2px 0 rgba(255,255,255,0.08) inset;
+}
+
+.intro-video-section__player .responsive-div {
+  margin: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 640px) {
+  .intro-video-section {
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+  }
+  .intro-video-section__heading {
+    font-size: 1.6rem;
+  }
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: #003C58;
