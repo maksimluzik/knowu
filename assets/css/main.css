@@ -501,9 +501,9 @@ strong { color: #003C58; font-weight: 600; }
   transform: none;
   box-shadow: 0 4px 14px rgba(0,60,88,0.08);
 }
-.platform-card__status {
+.platform-card p.platform-card__status {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   font-weight: 600;
   color: #999;
   background: #f0f0f0;

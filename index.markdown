@@ -118,12 +118,12 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
 <div class="platform-cards">
   <div class="platform-card platform-card--unavailable">
     <h4>iOS</h4>
-    <p class="platform-card__status">Under development</p>
+    <p class="platform-card__status">Coming soon</p>
     <img alt="Download on the App Store" src="/media/badges/ios.png" loading="lazy" style="opacity:0.35;" />
   </div>
   <div class="platform-card platform-card--unavailable">
     <h4>Android</h4>
-    <p class="platform-card__status">Under development</p>
+    <p class="platform-card__status">Coming soon</p>
     <img alt="Get it on Google Play" src="/media/badges/android.png" loading="lazy" style="opacity:0.35;" />
   </div>
   <div class="platform-card">
