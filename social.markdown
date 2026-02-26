@@ -86,44 +86,16 @@ permalink: /social/
 </div>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+<script async src="https://www.instagram.com/embed.js"></script>
 <script>
-(function() {
-  function processInstagramEmbeds() {
-    if (window.instgrm && window.instgrm.Embeds) {
-      window.instgrm.Embeds.process();
-    }
+window.addEventListener('load', function() {
+  if (window.instgrm && window.instgrm.Embeds) {
+    window.instgrm.Embeds.process();
   }
-
-  function init() {
-    if (window.instgrm) {
-      // Script already loaded (e.g. bfcache restore), just re-process
-      processInstagramEmbeds();
-      setTimeout(processInstagramEmbeds, 500);
-    } else {
-      // Load fresh
-      var script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      script.onload = function() {
-        processInstagramEmbeds();
-        setTimeout(processInstagramEmbeds, 500);
-        setTimeout(processInstagramEmbeds, 1500);
-      };
-      document.body.appendChild(script);
-    }
+});
+window.addEventListener('pageshow', function(e) {
+  if (e.persisted && window.instgrm && window.instgrm.Embeds) {
+    setTimeout(function() { window.instgrm.Embeds.process(); }, 300);
   }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-
-  // Handle bfcache page restores (pageshow fires after back/forward or cached refresh)
-  window.addEventListener('pageshow', function(e) {
-    if (e.persisted) {
-      setTimeout(processInstagramEmbeds, 300);
-    }
-  });
-})();
+});
 </script>
