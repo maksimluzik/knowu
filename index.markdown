@@ -15,7 +15,7 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
     <img src="/media/screenshots/home.png" alt="KnowU Home Screen" loading="lazy" />
   </div>
   <div class="screenshot-showcase__content">
-    <h3>Multi-Signal Personality Analysis</h3>
+    <h3>Your Personality, Fully Decoded</h3>
     <p>KnowU evaluates you across <strong>15 personality traits</strong> spanning three frameworks — <strong>MBTI</strong>, <strong>DISC</strong>, and <strong>Big Five</strong> — giving you a comprehensive, evidence-based portrait of your personality.</p>
     <a href="/features/" class="btn btn-primary">Explore Features</a>
   </div>
