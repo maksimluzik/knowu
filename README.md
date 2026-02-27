@@ -1,6 +1,6 @@
 # KnowU
 
-Welcome to the KnowU repository! This repository serves as an website, assets, manual, and source for the low-code app, KnowU.
+Welcome to the KnowU repository! This repository serves as an website, assets, manual, and source for the KnowU.
 
 ## Table of Contents
 
@@ -33,14 +33,17 @@ Use KnowU to enhance your personal development, improve relationships, and advan
 To get started with KnowU, you have three options
 
 * Using it via browser: navigate with to: https://web.knowu.app/
-* Installing Android version: https://play.google.com/apps/internaltest/4701433817876898981 (internal testing)
-* Installing iPhone version: https://apps.apple.com/app/knowu/id6630383351 (internal testing)
+* Installing Android version: (internal testing, contact me for access)
+* Installing iPhone version: (coming soon, contact me for updates)
 
 Thank you for using KnowU!
 
 ## Website
 
-KnowU website is available at [https://knowu.app](https://knowu.app). Manual will be added later to the site [https://knowu.app/manual](https://knowu.app/manual)
+- KnowU website is available at [https://knowu.app](https://knowu.app). 
+- Features list available at [https://knowu.app/features](https://knowu.app/features).
+- Terms of service available at [https://knowu.app/terms-of-service](https://knowu.app/terms-of-service).
+- Privacy policy available at [https://knowu.app/privacy-policy](https://knowu.app/privacy-policy).
 
 ## Contact
 
