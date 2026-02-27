@@ -24,7 +24,7 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
 <section class="intro-video-section">
   <div class="intro-video-section__inner">
     <p class="intro-video-section__eyebrow">Introduction</p>
-    <h2 class="intro-video-section__heading">See KnowU in Action</h2>
+    <h2 class="intro-video-section__heading">Understanding KnowU</h2>
     <p class="intro-video-section__subtext">A quick look at how KnowU helps you discover, understand, and reflect on who you are.</p>
     <div class="intro-video-section__player">
       <div class="responsive-div">
