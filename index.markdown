@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Home"
-description: "KnowU is a personality-insights app combining self-assessment, peer feedback, moral dilemmas, and AI-powered analysis across MBTI, DISC, and Big Five frameworks. Discover what makes you — and your friends — unique."
-keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC, Big Five, moral compass, AI personality insights, personal development, professional growth"
+description: "KnowU is a personality-insights app for individuals and teams — combining self-assessment, peer feedback, moral dilemmas, and AI-powered analysis across MBTI, DISC, and Big Five. Power personal growth, GROW coaching plans, and conflict-free team development."
+keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC, Big Five, moral compass, AI personality insights, personal development, professional growth, GROW coaching, team development, conflict prevention"
 ---
 
 <p class="phrase">"He who knows others is wise; he who knows himself is enlightened." &mdash; Lao Tzu</p>
@@ -71,6 +71,48 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
     <h3>Growth Tracking</h3>
     <p>Re-assess yourself over time, compare AI evaluations with your own self-reflections, and track how your personality evolves.</p>
   </div>
+</div>
+
+<hr class="section-divider" />
+
+<!-- Dual Audience Section -->
+<h2>Who is KnowU For?</h2>
+<p>Whether you're on a personal journey of self-discovery or leading a team towards higher performance, KnowU provides the insights you need.</p>
+
+<div class="audience-grid">
+
+  <!-- Personal Use — highlighted -->
+  <div class="audience-card audience-card--personal audience-card--featured">
+    <div class="audience-card__badge">Personal</div>
+    <div class="audience-card__icon">🌱</div>
+    <h3>For Individuals</h3>
+    <p>Understand who you truly are — how you think, relate, lead, and grow. KnowU combines self-reflection, peer input, and AI analysis for a complete picture of your personality.</p>
+    <ul class="audience-card__list">
+      <li>✦ Deep self-awareness through MBTI, DISC &amp; Big Five</li>
+      <li>✦ Moral Compass — see what your choices reveal</li>
+      <li>✦ Blind Reveal — honest feedback from friends</li>
+      <li>✦ AI-powered personality chat &amp; growth insights</li>
+      <li>✦ Track your evolution over time</li>
+    </ul>
+    <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-primary">Start For Free</a>
+  </div>
+
+  <!-- Professional / Teams -->
+  <div class="audience-card audience-card--professional">
+    <div class="audience-card__badge audience-card__badge--pro">Professional</div>
+    <div class="audience-card__icon">🏢</div>
+    <h3>For Teams &amp; Organizations</h3>
+    <p>Equip managers and HR leaders with deep personality data to run better GROW coaching conversations, development discussions, and prevent team conflict before it escalates.</p>
+    <ul class="audience-card__list">
+      <li>✦ GROW Plan coaching powered by personality data</li>
+      <li>✦ Structured 1:1 development discussions</li>
+      <li>✦ Team personality mapping &amp; dynamics</li>
+      <li>✦ Glasl conflict escalation prevention</li>
+      <li>✦ HR onboarding &amp; leadership development</li>
+    </ul>
+    <a href="/business/" class="btn btn-secondary">Learn More →</a>
+  </div>
+
 </div>
 
 <hr class="section-divider" />
