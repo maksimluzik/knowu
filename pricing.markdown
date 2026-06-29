@@ -95,7 +95,7 @@ permalink: /pricing/
 
 <!-- Feature Comparison Callout -->
 <div class="pricing-callout">
-  <div class="pricing-callout__icon">🏢</div>
+  <div class="pricing-callout__icon"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><path d="M9 16h6v6"/><line x1="8" y1="6" x2="8" y2="6"/><line x1="16" y1="6" x2="16" y2="6"/><line x1="8" y1="11" x2="8" y2="11"/><line x1="16" y1="11" x2="16" y2="11"/></svg></div>
   <div class="pricing-callout__content">
     <h3>Not sure which plan is right for your team?</h3>
     <p>Learn how KnowU powers GROW coaching, structured development discussions, and Friedrich Glasl's conflict escalation prevention in professional environments.</p>
