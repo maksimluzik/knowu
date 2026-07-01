@@ -1,125 +1,143 @@
 # KnowU
 
-Welcome to the KnowU repository! This repository serves as an website, assets, manual, and source for the KnowU.
+Welcome to the KnowU repository! This repository contains the source code, assets, content, and documentation for the official website of **KnowU** (available at [https://knowu.app](https://knowu.app)).
+
+KnowU is a multi-dimensional personality-insights platform designed for both personal self-discovery and organizational team development.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [App Description](#app-description)
-- [Features](#features)
-- [Usage](#usage)
-- [Website](#website)
-- [Contact](#contact)
+- [Key Features](#key-features)
+  - [For Individuals](#for-individuals)
+  - [For Teams & Business](#for-teams--business)
+- [Pricing & Plans](#pricing--plans)
+- [Application Usage & Installation](#application-usage--installation)
+- [Website Architecture & Pages](#website-architecture--pages)
+- [Branding Guidelines](#branding-guidelines)
+- [Local Development Setup](#local-development-setup)
+- [Contact & Support](#contact--support)
+
+---
 
 ## Introduction
 
-KnowU is your ultimate tool for personal and professional growth, offering a unique blend of self-assessment and peer feedback to provide a comprehensive view of your personality. By integrating data from social media, personal input, and insights from friends and colleagues, KnowU creates a detailed profile that helps you understand your strengths, areas for growth, and how you're perceived by others.
+KnowU is your ultimate tool for personal and professional growth, offering a unique blend of self-assessment and peer feedback to provide a comprehensive view of your personality. 
 
-## App Description
+Rather than relying on a single static questionnaire, KnowU triangulates data from:
+* **Self-Assessments** (including specialized questionnaires like *Leadership Material*)
+* **Moral Decision-Making** (daily ethical dilemmas via the Moral Compass)
+* **Peer Observations** (structured feedback and anonymous social games)
+* **Social Media Behaviour** (AI analysis of communication styles)
+* **AI-Powered Conversations** (personality-aware coaching chat)
 
-Welcome to KnowU!
+All insights are grounded in three established psychological frameworks: **Myers-Briggs Type Indicator (MBTI)**, **DISC**, and the **Big Five (Agreeableness)**, measuring a total of 15 personality traits.
 
-Use KnowU to enhance your personal development, improve relationships, and advance in your career. Whether you're seeking to gain deeper self-awareness, find compatibility in relationships, or excel in your professional life, KnowU offers the insights you need to succeed. Sign up today and start your journey of self-discovery!
+---
 
-## Features
+## Key Features
 
-- Comprehensive self-assessment
-- Peer feedback integration
-- Detailed personality profile
-- Insights for personal and professional growth
+### For Individuals
+Detailed individual feature documentation is located in [individual.markdown](file:///Users/maksim/Workspace/knowu/individual.markdown) (Live at [knowu.app/individual](https://knowu.app/individual)):
 
-## Usage
+* **Personality Questionnaires**: Answer questions through an intuitive card-swipe interface. Get custom summaries across 15 traits scored from 0–100.
+* **Trait Self-Reflection**: Set personal self-scores (1–10 slider) and maintain notes for each trait to compare against AI-generated results.
+* **Moral Compass**: Tinder-style swiping game presenting ethical dilemmas to discover what your choices reveal about your personality.
+* **Ask Friends (Peer Feedback)**: Request structured evaluations (1–10 scores + comments) from friends or colleagues, automatically grouped by trait.
+* **Social Games**: Play **Blind Reveal** (simultaneously revealed group honesty questions) and **Who's Most Likely** (group voting with trophies for winners).
+* **Ask AI**: Chat with a personality-aware AI coach that has full context of your scores, peer feedback, self-reflection, and moral decisions.
+* **Analytics Dashboard**: Visualize your profile using radar charts, bar graphs, and DISC donut charts.
+* **Trait Encyclopedia**: Explore detailed descriptions of all 15 personality traits, highlighting strengths and blind spots.
 
-To get started with KnowU, you have three options
+### For Teams & Business
+Detailed business and coaching feature documentation is located in [business.markdown](file:///Users/maksim/Workspace/knowu/business.markdown) (Live at [knowu.app/business](https://knowu.app/business)):
 
-* Using it via browser: navigate with to: https://web.knowu.app/
-* Installing Android version: (internal testing, contact me for access)
-* Installing iPhone version: (coming soon, contact me for updates)
+* **GROW Coaching Plans**: Power Goal, Reality, Options, and Will coaching conversations with objective personality data and AI suggestions.
+* **Development Discussions**: Structure 1:1 check-ins, identify blind spots (discrepancies between self-assessment and peer ratings), and track progress.
+* **Glasl Conflict Prevention Model**: Proactively prevent team conflict. KnowU maps dynamics across Friedrich Glasl’s 9 conflict stages, offering managers early indicators to intervene during Phase 1 (Win/Win).
+* **Team Composition**: View aggregate personality distribution across your team to identify coverage gaps and optimize collaboration.
+* **Leadership Readiness**: Assess leadership potential with focused alignment scoring and development feedback.
 
-Thank you for using KnowU!
+---
 
-## Website
+## Pricing & Plans
+Pricing plans are detailed in [pricing.markdown](file:///Users/maksim/Workspace/knowu/pricing.markdown) (Live at [knowu.app/pricing](https://knowu.app/pricing)):
 
-- KnowU website is available at [https://knowu.app](https://knowu.app). 
-- Individual features list available at [https://knowu.app/individual](https://knowu.app/individual).
-- Terms of service available at [https://knowu.app/terms-of-service](https://knowu.app/terms-of-service).
-- Privacy policy available at [https://knowu.app/privacy-policy](https://knowu.app/privacy-policy).
+| Plan | Pricing | Target Audience | Key Included Features |
+| :--- | :--- | :--- | :--- |
+| **Free** | €0 | Personal self-discovery | Core assessment, 15 trait scores, Moral Compass, limited peer requests (3/mo), AI chat (10/mo) |
+| **Professional** | €10 / user / mo | Individuals & Coaches | Unlimited peer requests, unlimited AI chat, growth history tracking, Leadership assessment, social media analysis, PDF exports |
+| **Teams** | Custom (Min. 3 users) | Managers, HR & Orgs | GROW templates, team dashboards, manager views, Glasl stage tracking, SSO, dedicated isolated database, priority onboarding |
 
-## Contact
+---
 
-For any questions or inquiries, please contact:
+## Application Usage & Installation
 
-* Maksim Luzik [Maksim Luzik](https://www.maksimluzik.com) or [me@maksimluzik.com](mailto:me@maksimluzik.com)
+The KnowU application can be accessed and installed via:
 
-## Branding
+1. **Web Version**: Open in any desktop or mobile browser at [https://web.knowu.app](https://web.knowu.app).
+2. **iOS App (Beta)**: Available via Apple TestFlight. Refer to the TestFlight setup instructions in [ios.markdown](file:///Users/maksim/Workspace/knowu/ios.markdown) (Live at [knowu.app/ios/](https://knowu.app/ios/)).
+3. **Android App (Beta)**: Available via Google Play internal testing. Refer to the invitation and installation guide in [android.markdown](file:///Users/maksim/Workspace/knowu/android.markdown) (Live at [knowu.app/android/](https://knowu.app/android/)).
 
-KnowU uses a carefully selected color palette that reflects professionalism, trust, and personal growth:
+---
 
-### Tagline
+## Website Architecture & Pages
 
-> **Discover Who You Truly Are**
->
-> Personal growth through self-assessment, peer feedback, and actionable insights — powered by Myers-Briggs, DISC, and Big Five models.
+Below is a map of the website files in this repository:
+* [index.markdown](file:///Users/maksim/Workspace/knowu/index.markdown) - Homepage with core value proposition, audience entryways, and contact forms.
+* [individual.markdown](file:///Users/maksim/Workspace/knowu/individual.markdown) - Explains all feature sets for individual users.
+* [business.markdown](file:///Users/maksim/Workspace/knowu/business.markdown) - Focuses on GROW plans, 1:1 guides, and Glasl's conflict escalation model.
+* [pricing.markdown](file:///Users/maksim/Workspace/knowu/pricing.markdown) - Details plan tiers and contains the Frequently Asked Questions (FAQ).
+* [social.markdown](file:///Users/maksim/Workspace/knowu/social.markdown) - Hub linking to Instagram and Facebook pages with live widgets.
+* [ios.markdown](file:///Users/maksim/Workspace/knowu/ios.markdown) - Guide to install the app on Apple iOS via TestFlight.
+* [android.markdown](file:///Users/maksim/Workspace/knowu/android.markdown) - Guide to install the app on Google Play via internal testing.
+* [evaluate.markdown](file:///Users/maksim/Workspace/knowu/evaluate.markdown) - Landing page for peers submitting ratings and feedback.
+* [join.markdown](file:///Users/maksim/Workspace/knowu/join.markdown) - Beta program signup form.
+* [privacy-policy.markdown](file:///Users/maksim/Workspace/knowu/privacy-policy.markdown) - GDPR compliance and user privacy terms.
+* [terms-of-service.markdown](file:///Users/maksim/Workspace/knowu/terms-of-service.markdown) - Terms governing application use.
 
-### Color Palette
+---
 
-- **Primary Color:** `#00BFC6` - A vibrant cyan that represents clarity, communication, and self-awareness
-- **Secondary Color:** `#003C58` - A deep navy blue that conveys trust, stability, and depth
-- **Background Color:** `#FBFEFF` - A clean, light background that ensures excellent readability
-- **Text Color:** `#424242` - A dark gray that provides comfortable reading without harsh contrast
+## Branding Guidelines
 
-### Usage Guidelines
+KnowU maintains a cohesive brand identity focused on professionalism, trust, and growth:
 
-- Use the **Primary Color** (`#00BFC6`) for:
-  - Call-to-action buttons
-  - Links and interactive elements
-  - Accent colors and highlights
-  - Brand logo elements
+* **Tagline**: *Discover Who You Truly Are*
+* **Core Brand Colors**:
+  * **Primary Color**: `#00BFC6` (Cyan) - Represents clarity, communication, and self-awareness. Used for primary CTAs, links, and highlights.
+  * **Secondary Color**: `#003C58` (Deep Navy) - Conveys trust, stability, and depth. Used for headings, footers, and hover states.
+  * **Background Color**: `#FBFEFF` (Off-White) - Clean background ensuring readability and professional layout.
+  * **Text Color**: `#424242` (Charcoal) - Used for body copy to prevent harsh contrast.
 
-- Use the **Secondary Color** (`#003C58`) for:
-  - Headings and important text
-  - Footer elements
-  - Secondary buttons and accents
-  - Navigation hover states
+---
 
-- Maintain the **Background Color** (`#FBFEFF`) for:
-  - Page backgrounds
-  - Card and container backgrounds
-  - Clean, professional layouts
+## Local Development Setup
 
-- Use the **Text Color** (`#424242`) for:
-  - Body text and paragraphs
-  - General content
-  - Form labels and descriptions
+The KnowU marketing website is built using **Jekyll** (with the `minima` theme).
 
-The color palette is designed to be accessible, modern, and professional while maintaining the KnowU brand identity.
+### Prerequisites
+Make sure you have Ruby and Bundler installed on your system.
 
-## Tech stuff
+### Steps to Run Locally
+1. Clone the repository and navigate to the project root.
+2. Install the necessary Ruby gems:
+   ```bash
+   bundle install
+   ```
+3. Run the local development server:
+   ```bash
+   bundle exec jekyll serve --livereload
+   ```
+   The site will be hosted at `http://localhost:8000`. The `--livereload` flag automatically refreshes the browser when edits are saved.
+4. To build the static website files without running a server:
+   ```bash
+   bundle exec jekyll build
+   ```
+   The generated site will be placed in the `_site/` directory.
 
-Running Jekyll locally: `bundle exec jekyll serve --livereload`. In case of errors, run `bundle install` first. To just build the website run `bundle exec jekyll build` --livereload`
+---
 
-## Jekyll documentation
+## Contact & Support
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+For any questions, support requests, or partnership inquiries:
+* **Support Email**: [support@knowu.app](mailto:support@knowu.app)
+* **Administrative Lead**: Maksim Luzik ([maksimluzik.com](https://www.maksimluzik.com) | [me@maksimluzik.com](mailto:me@maksimluzik.com))
