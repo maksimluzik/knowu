@@ -86,16 +86,34 @@ permalink: /social/
 </div>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
-<script async src="https://www.instagram.com/embed.js"></script>
+<script async defer src="https://www.instagram.com/embed.js"></script>
 <script>
-window.addEventListener('load', function() {
-  if (window.instgrm && window.instgrm.Embeds) {
-    window.instgrm.Embeds.process();
+(function() {
+  function processInstagram() {
+    if (window.instgrm && window.instgrm.Embeds) {
+      window.instgrm.Embeds.process();
+    }
   }
-});
-window.addEventListener('pageshow', function(e) {
-  if (e.persisted && window.instgrm && window.instgrm.Embeds) {
-    setTimeout(function() { window.instgrm.Embeds.process(); }, 300);
-  }
-});
+
+  // Run on window load
+  window.addEventListener('load', processInstagram);
+
+  // Run on pageshow (handles back/forward navigation and BFCache)
+  window.addEventListener('pageshow', function(e) {
+    processInstagram();
+  });
+
+  // Polling loop to handle cache/asynchronous race conditions
+  var attempts = 0;
+  var interval = setInterval(function() {
+    attempts++;
+    if (window.instgrm && window.instgrm.Embeds) {
+      processInstagram();
+      clearInterval(interval);
+    } else if (attempts > 30) { // Stop polling after 3 seconds
+      clearInterval(interval);
+    }
+  }, 100);
+})();
 </script>
+

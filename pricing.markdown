@@ -27,7 +27,7 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--yes">Full personality assessment (MBTI, DISC, Big Five)</li>
       <li class="pricing-card__feature pricing-card__feature--yes">15 trait scores with AI-generated profile</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Moral Compass — daily ethical dilemmas</li>
-      <li class="pricing-card__feature pricing-card__feature--yes">Peer Feedback requests (up to 3/month)</li>
+      <li class="pricing-card__feature pricing-card__feature--yes">Peer Feedback requests (up to 20/month)</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Blind Reveal &amp; Who's Most Likely games</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Analytics dashboard &amp; personality radar</li>
       <li class="pricing-card__feature pricing-card__feature--yes">AI chat (10 conversations/month)</li>
@@ -117,7 +117,7 @@ permalink: /pricing/
       <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <div class="faq-item__answer">
-      <p>Yes — the Free plan gives you full access to personality assessments, the Moral Compass, peer feedback (up to 3 requests/month), and 10 AI conversations. No payment required. Upgrade when you're ready for more.</p>
+      <p>Yes — the Free plan gives you full access to personality assessments, the Moral Compass, peer feedback requests (limited), and AI conversations (limited). No payment required. Upgrade when you're ready for more.</p>
     </div>
   </div>
 
@@ -148,6 +148,16 @@ permalink: /pricing/
     </button>
     <div class="faq-item__answer">
       <p>Absolutely. Employees own their data. In the Teams plan, managers see aggregated team insights and high-level indicators — not raw questionnaire answers or private AI conversations. Additionally, all business data for team plans is stored in a completely separate, isolated database to ensure maximum security and privacy. We follow GDPR-compliant data practices. See our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-item__question" aria-expanded="false" onclick="toggleFaq(this)">
+      How does KnowU handle data privacy and PII?
+      <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="faq-item__answer">
+      <p>We take data privacy and the protection of Personally Identifiable Information (PII) very seriously. You own your data, control who can access it, and have the right to request full data removal at any point. For more details, see our <a href="/privacy-policy/">Privacy Policy</a> or reach out to <a href="mailto:privacy@mxm-consulting.fi">privacy@mxm-consulting.fi</a>.</p>
     </div>
   </div>
 
