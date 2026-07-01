@@ -17,7 +17,7 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
   <div class="screenshot-showcase__content">
     <h3>Your Personality, Fully Decoded</h3>
     <p>KnowU evaluates you across <strong>15 personality traits</strong> spanning three frameworks — <strong>MBTI</strong>, <strong>DISC</strong>, and <strong>Big Five</strong> — giving you a comprehensive, evidence-based portrait of your personality.</p>
-    <a href="/features/" class="btn btn-primary">Explore Features</a>
+    <a href="/individual/" class="btn btn-primary">For Individuals</a>
   </div>
 </div>
 
@@ -149,7 +149,7 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
         <span class="usecase-scenario__icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
         <div>
           <strong>Honest peer feedback</strong>
-          <p>Use Blind Reveal to get candid answers from a partner or close friend about how you show up in the relationship — without the awkwardness of a direct conversation.</p>
+          <p>Use Blind Reveal to get candid answers from a partner or close friend about how you show up in the relationship — acting as a softer starting point for discussions that might otherwise be hard to initiate.</p>
         </div>
       </div>
       <div class="usecase-scenario">

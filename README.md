@@ -41,7 +41,7 @@ Thank you for using KnowU!
 ## Website
 
 - KnowU website is available at [https://knowu.app](https://knowu.app). 
-- Features list available at [https://knowu.app/features](https://knowu.app/features).
+- Individual features list available at [https://knowu.app/individual](https://knowu.app/individual).
 - Terms of service available at [https://knowu.app/terms-of-service](https://knowu.app/terms-of-service).
 - Privacy policy available at [https://knowu.app/privacy-policy](https://knowu.app/privacy-policy).
 

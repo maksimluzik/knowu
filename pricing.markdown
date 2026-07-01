@@ -83,6 +83,7 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--yes">Glasl escalation stage tracking</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Team composition analysis</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Single Sign-On (SSO)</li>
+      <li class="pricing-card__feature pricing-card__feature--yes">Dedicated isolated database for team data</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Priority support &amp; onboarding</li>
     </ul>
     <a href="/#questions-or-feedback" class="btn btn-secondary pricing-card__cta">Contact Sales</a>
@@ -146,7 +147,7 @@ permalink: /pricing/
       <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <div class="faq-item__answer">
-      <p>Absolutely. Employees own their data. In the Teams plan, managers see aggregated team insights and high-level indicators — not raw questionnaire answers or private AI conversations. We follow GDPR-compliant data practices. See our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
+      <p>Absolutely. Employees own their data. In the Teams plan, managers see aggregated team insights and high-level indicators — not raw questionnaire answers or private AI conversations. Additionally, all business data for team plans is stored in a completely separate, isolated database to ensure maximum security and privacy. We follow GDPR-compliant data practices. See our <a href="/privacy-policy/">Privacy Policy</a> for details.</p>
     </div>
   </div>
 

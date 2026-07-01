@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Features
-description: "Explore KnowU's features — personality assessments across MBTI, DISC & Big Five, moral dilemma stories, peer feedback games, AI chat, analytics dashboards, and trait self-reflection."
-keywords: "KnowU features, personality assessment, moral compass, peer feedback, AI chat, DISC, MBTI, Big Five, analytics, traits"
-permalink: /features/
+title: "For Individuals"
+description: "Explore KnowU for individual personal users — personality assessments across MBTI, DISC & Big Five, moral dilemma stories, peer feedback games, AI chat, analytics dashboards, and trait self-reflection."
+keywords: "KnowU for individuals, personal personality assessment, moral compass, peer feedback, AI chat, DISC, MBTI, Big Five, analytics, traits"
+permalink: /individual/
 ---
 
 KnowU combines multiple signals — self-assessments, moral decisions, peer feedback, social media analysis, and AI conversations — to build a rich, multi-dimensional personality portrait.
