@@ -163,6 +163,16 @@ permalink: /pricing/
 
   <div class="faq-item">
     <button class="faq-item__question" aria-expanded="false" onclick="toggleFaq(this)">
+      Does KnowU comply with industry security standards like ISO 27001, SOC 2, and HIPAA?
+      <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="faq-item__answer">
+      <p>Yes. KnowU's technical controls, architecture, and data governance practices are built to align with ISO/IEC 27001:2022, SOC 2 Type II, and HIPAA Security &amp; Privacy Rules. We enforce TLS 1.3 encryption in transit, AES-256 encryption at rest, strict database authorization rules, and detailed operations logging. For a complete mapping of our security practices, read our detailed <a href="/compliance/">Compliance Mapping Report</a>.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-item__question" aria-expanded="false" onclick="toggleFaq(this)">
       How does billing work?
       <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>

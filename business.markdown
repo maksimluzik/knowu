@@ -271,6 +271,18 @@ permalink: /business/
 
 <hr class="section-divider" />
 
+<!-- Security & Compliance -->
+<div class="pricing-callout" style="background: linear-gradient(145deg, rgba(0,60,88,0.04) 0%, rgba(0,191,198,0.03) 100%);">
+  <div class="pricing-callout__icon"><svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+  <div class="pricing-callout__content">
+    <h3>Enterprise-Grade Security &amp; Compliance</h3>
+    <p>KnowU is built to ensure complete data isolation, strong encryption, and alignment with ISO 27001, SOC 2, and HIPAA standards. Your team's development data remains secure, confidential, and fully audit-ready.</p>
+    <a href="/compliance/" class="btn btn-outline-dark">View Compliance Details →</a>
+  </div>
+</div>
+
+<hr class="section-divider" />
+
 <!-- CTA -->
 <div class="business-cta-section">
   <h2>Ready to Bring KnowU to Your Organisation?</h2>

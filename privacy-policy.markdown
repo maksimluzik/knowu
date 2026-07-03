@@ -24,8 +24,12 @@ To Personalize Your Experience: We use the information collected to provide a mo
 ## 4. Sharing Your Information
 We do not share your personal information with third parties except:
 
-With Your Consent: We may share your information with third parties if you have given us your explicit consent to do so.
-For Legal Reasons: We may disclose your information if required to do so by law or in response to valid requests by public authorities.
+* **With Your Consent**: We may share your information with third parties if you have given us your explicit consent to do so.
+* **For Legal Reasons**: We may disclose your information if required to do so by law or in response to valid requests by public authorities.
+
+### Sharing Within the App (Friends & AI Conversations)
+By default, your personality scores can be shared with users you add as friends ("Friends") in the App to support comparative analytics and social features.
+* **Opt-Out Control**: You can control sharing in your profile settings using the toggle **"Share profile with Ask AI"**. When turned off, your Friends cannot include your personality profile or scores in their conversations with the AI coach.
 
 ##  5. Data Security
 We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, disclosure, alteration, or destruction.
