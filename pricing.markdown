@@ -177,7 +177,7 @@ permalink: /pricing/
       <svg class="faq-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <div class="faq-item__answer">
-      <p>All paid plans are billed by invoice. After contacting us, we'll agree on a billing cycle and send invoices accordingly. There are no automatic credit card charges at the moment. We plan to add Stripe payments in the future.</p>
+      <p>All paid plans are billed by invoice. After contacting us, we'll agree on a billing cycle and send invoices accordingly. There are no automatic credit card charges at the moment. We plan to add MobilePay and Stripe payments in the future.</p>
     </div>
   </div>
 
