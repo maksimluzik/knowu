@@ -141,3 +141,4 @@ Make sure you have Ruby and Bundler installed on your system.
 For any questions, support requests, or partnership inquiries:
 * **Support Email**: [support@knowu.app](mailto:support@knowu.app)
 * **Administrative Lead**: Maksim Luzik ([maksimluzik.com](https://www.maksimluzik.com) | [me@maksimluzik.com](mailto:me@maksimluzik.com))
+
