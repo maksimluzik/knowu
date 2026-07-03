@@ -160,6 +160,14 @@ permalink: /evaluate/
             img.onclick = function() { 
                 selectedRating = i;
                 highlightSelectedRating(i);
+                if (typeof gtag === 'function') {
+                    gtag('event', 'select_rating', {
+                        'rating_value': i,
+                        'trait_id': traitId || 'unknown',
+                        'question_id': questionId || 'unknown',
+                        'page_path': window.location.pathname
+                    });
+                }
             };
 
             const label = document.createElement("span");
@@ -214,6 +222,17 @@ permalink: /evaluate/
         const endpointBase = "https://script.google.com/macros/s/AKfycbxm4vkKZMhDO1r-rPZcc_bgd3FcsdxpbZG7Tk3Ukr7-U6EzJMv6Tigic5eIHgVmzV-X/exec";
         const requestUrl = `${endpointBase}?endpoint=evaluate_user&hash=${hash}&questionId=${questionId}&traitId=${traitId}&initiatorId=${initiatorId}&encodedQuestion=${encodedQuestion}&rating=${selectedRating}&comment=${encodeURIComponent(comment)}`;
 
+        // GA4 tracking for evaluation submission attempt
+        if (typeof gtag === 'function') {
+            gtag('event', 'submit_evaluation_attempt', {
+                'trait_id': traitId || 'unknown',
+                'question_id': questionId || 'unknown',
+                'rating_value': selectedRating,
+                'comment_length': comment.length,
+                'page_path': window.location.pathname
+            });
+        }
+
         // Create a popup to indicate submission in progress
         const popup = document.createElement("div");
         popup.id = "rating-popup";
@@ -234,6 +253,19 @@ permalink: /evaluate/
             if (data.error) {
                 throw new Error(data.error);
             }
+            
+            // GA4 tracking for evaluation submission success
+            if (typeof gtag === 'function') {
+                gtag('event', 'submit_evaluation', {
+                    'status': 'success',
+                    'trait_id': traitId || 'unknown',
+                    'question_id': questionId || 'unknown',
+                    'rating_value': selectedRating,
+                    'comment_length': comment.length,
+                    'page_path': window.location.pathname
+                });
+            }
+
             popup.innerText = `Your evaluation has been registered. Thank you!`;
             
             document.getElementById("rating-container").style.pointerEvents = "none"; // Disable rating selection
@@ -249,6 +281,19 @@ permalink: /evaluate/
             evaluationMessage.style.display = "block";
         })
         .catch(error => {
+            // GA4 tracking for evaluation submission error
+            if (typeof gtag === 'function') {
+                gtag('event', 'submit_evaluation', {
+                    'status': 'error',
+                    'error_message': error.message,
+                    'trait_id': traitId || 'unknown',
+                    'question_id': questionId || 'unknown',
+                    'rating_value': selectedRating,
+                    'comment_length': comment.length,
+                    'page_path': window.location.pathname
+                });
+            }
+
             popup.innerText = `An error occurred while submitting your evaluation. Please try again.`;
             
             // Update evaluation message with the error
