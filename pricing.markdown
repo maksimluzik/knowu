@@ -27,10 +27,10 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--yes">Full personality assessment (MBTI, DISC, Big Five)</li>
       <li class="pricing-card__feature pricing-card__feature--yes">15 trait scores with AI-generated profile</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Moral Compass — daily ethical dilemmas</li>
-      <li class="pricing-card__feature pricing-card__feature--yes">Peer Feedback requests (up to 20/month)</li>
-      <li class="pricing-card__feature pricing-card__feature--yes">Blind Reveal &amp; Who's Most Likely games</li>
+      <li class="pricing-card__feature pricing-card__feature--yes">Peer Feedback requests (request limit)</li>
+      <li class="pricing-card__feature pricing-card__feature--yes">Blind Reveal &amp; Who's Most Likely games (request limit)</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Analytics dashboard &amp; personality radar</li>
-      <li class="pricing-card__feature pricing-card__feature--yes">AI chat (10 conversations/month)</li>
+      <li class="pricing-card__feature pricing-card__feature--yes">AI chat (conversation limit)</li>
       <li class="pricing-card__feature pricing-card__feature--no">Growth tracking history</li>
       <li class="pricing-card__feature pricing-card__feature--no">GROW coaching templates</li>
       <li class="pricing-card__feature pricing-card__feature--no">Team features</li>
