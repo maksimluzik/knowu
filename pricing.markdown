@@ -35,7 +35,10 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--no">GROW coaching templates</li>
       <li class="pricing-card__feature pricing-card__feature--no">Team features</li>
     </ul>
-    <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-outline-dark pricing-card__cta">Get Started Free</a>
+    <div class="pricing-card__footer">
+      <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-outline-dark pricing-card__cta">Get Started Free</a>
+      <p class="pricing-card__min pricing-card__min--spacer" aria-hidden="true">Minimum 3 users · Billed by invoice</p>
+    </div>
   </div>
 
   <!-- Professional -->
@@ -61,7 +64,10 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--no">GROW coaching templates</li>
       <li class="pricing-card__feature pricing-card__feature--no">Team features</li>
     </ul>
-    <a href="/#questions-or-feedback" class="btn btn-primary pricing-card__cta">Contact Us</a>
+    <div class="pricing-card__footer">
+      <a href="/#questions-or-feedback" class="btn btn-primary pricing-card__cta">Contact Us</a>
+      <p class="pricing-card__min pricing-card__min--spacer" aria-hidden="true">Minimum 3 users · Billed by invoice</p>
+    </div>
   </div>
 
   <!-- Teams -->
@@ -86,8 +92,10 @@ permalink: /pricing/
       <li class="pricing-card__feature pricing-card__feature--yes">Dedicated isolated database for team data</li>
       <li class="pricing-card__feature pricing-card__feature--yes">Priority support &amp; onboarding</li>
     </ul>
-    <a href="/#questions-or-feedback" class="btn btn-secondary pricing-card__cta">Contact Sales</a>
-    <p class="pricing-card__min">Minimum 3 users · Billed by invoice</p>
+    <div class="pricing-card__footer">
+      <a href="/#questions-or-feedback" class="btn btn-secondary pricing-card__cta">Contact Sales</a>
+      <p class="pricing-card__min">Minimum 3 users · Billed by invoice</p>
+    </div>
   </div>
 
 </div>
