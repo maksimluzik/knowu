@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -157,5 +157,7 @@
         });
       });
     </script>
+    {% include pwa-modal.html %}
+    <script src="{{ '/assets/js/pwa-modal.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>

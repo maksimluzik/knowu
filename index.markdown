@@ -245,23 +245,54 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
 <hr class="section-divider" />
 
 <h2>Get Started</h2>
-<p>KnowU is available on Web. iOS and Android apps are currently under development.</p>
+<p>KnowU is available on Web. While native iOS and Android apps are currently under development, you can install KnowU directly on your phone as a Progressive Web App (PWA).</p>
 
 <div class="platform-cards">
-  <div class="platform-card platform-card--unavailable">
+  <div class="platform-card platform-card--pwa" data-open-pwa="ios" role="region" aria-label="iOS Web App (PWA) installation">
     <h4>iOS</h4>
     <p class="platform-card__status">Coming soon</p>
-    <img alt="Download on the App Store" src="/media/badges/ios.png" loading="lazy" style="opacity:0.35;" />
+    <div class="platform-card__badge-wrapper">
+      <img alt="Download on the App Store" src="/media/badges/ios.png" loading="lazy" />
+    </div>
+    <div class="platform-card__actions">
+      <button type="button" class="btn-pwa-trigger" data-open-pwa="ios" aria-haspopup="dialog" aria-controls="pwa-modal">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        <span>Install as PWA</span>
+      </button>
+      <span class="platform-card__hint">Add to iPhone Home Screen</span>
+    </div>
   </div>
-  <div class="platform-card platform-card--unavailable">
+
+  <div class="platform-card platform-card--pwa" data-open-pwa="android" role="region" aria-label="Android Web App (PWA) installation">
     <h4>Android</h4>
     <p class="platform-card__status">Coming soon</p>
-    <img alt="Get it on Google Play" src="/media/badges/android.png" loading="lazy" style="opacity:0.35;" />
+    <div class="platform-card__badge-wrapper">
+      <img alt="Get it on Google Play" src="/media/badges/android.png" loading="lazy" />
+    </div>
+    <div class="platform-card__actions">
+      <button type="button" class="btn-pwa-trigger" data-open-pwa="android" aria-haspopup="dialog" aria-controls="pwa-modal">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+        <span>Install as PWA</span>
+      </button>
+      <span class="platform-card__hint">Add to Android Home Screen</span>
+    </div>
   </div>
+
   <div class="platform-card">
     <h4>Web</h4>
-    <p>Any browser</p>
-    <a href="https://web.knowu.app" target="_blank" rel="noopener" title="Open KnowU Web App"><img alt="Open in Browser" src="/media/badges/web.png" loading="lazy" /></a>
+    <p class="platform-card__status platform-card__status--live">Available Now</p>
+    <div class="platform-card__badge-wrapper">
+      <a href="https://web.knowu.app" target="_blank" rel="noopener" title="Open KnowU Web App">
+        <img alt="Open in Browser" src="/media/badges/web.png" loading="lazy" />
+      </a>
+    </div>
+    <div class="platform-card__actions">
+      <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn-pwa-trigger btn-pwa-trigger--primary" title="Open KnowU Web App in Browser">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <span>Open Web App</span>
+      </a>
+      <span class="platform-card__hint">Any desktop or mobile browser</span>
+    </div>
   </div>
 </div>
 

@@ -1,26 +1,36 @@
 ---
 layout: page
-title: Android installation
-description: "Download and install KnowU personality assessment app on Android devices. Guide for Google Play internal testing program."
-keywords: "KnowU Android app, Google Play installation, personality app Android, download KnowU"
+title: Android Installation Guide
+description: "How to install KnowU on Android devices. Learn how to add KnowU as a Progressive Web App (PWA) to your home screen."
+keywords: "KnowU Android app, Android PWA, add to home screen, personality app Android, download KnowU"
 permalink: /android/
 ---
 
-## Step 1
-Navigate on your phone or computer to [Google Play](https://play.google.com/apps/internaltest/4701433817876898981) and accept the invite.
-![KnowU app invitation in Google Play](/media/android-invited-program.png)
+> **Notice:** The native Google Play Store release of KnowU is currently under development and coming soon. In the meantime, you can install KnowU immediately on your Android phone or tablet as a **Progressive Web App (PWA)** with full app features!
 
-After accepting the invite you should see this screen. Move to Step 2.
-![KnowU app accepted invite in Google Play](/media/android-accepted-program.png)
+<div style="margin: 2rem 0; text-align: center;">
+  <button type="button" class="btn btn-primary" data-open-pwa="android" style="display:inline-flex;align-items:center;gap:0.5rem;">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+    <span>View Step-by-Step PWA Guide</span>
+  </button>
+</div>
 
-## Step 2
-Click the link from the invite (in previous step) or visit this URL on your mobile device: [https://play.google.com/store/apps/details?id=app.mxm.knowu&hl=en-US&ah=AiHcSzx6-s7YxPO-9JYLhIVHYDE](https://play.google.com/store/apps/details?id=app.mxm.knowu&hl=en-US&ah=AiHcSzx6-s7YxPO-9JYLhIVHYDE) to install the app on your Android device.
-![KnowU install KnowU app in Google Play](/media/android-install-app.png)
+## How to Install as a Web App (PWA) on Android
 
-You are done! You can now find KnowU app in your phone like a regular app.
+Installing KnowU on Android as a Progressive Web App delivers native performance, home screen icon, app drawer integration, and fast loading.
 
-![KnowU installed on Android](/media/android-installed-example.jpg)
+### Step 1: Open Chrome
+Open **Google Chrome** on your Android device and visit [**web.knowu.app**](https://web.knowu.app){:target="_blank" rel="noopener"}.
 
-## Updates
-When new versions are released you will be able to update the app via Google Play. Note that the app name might show as *app.mxm.knowu (unreviewed)* instead of KnowU. You can also navigate directly to [https://play.google.com/store/apps/details?id=app.mxm.knowu&hl=en-US&ah=AiHcSzx6-s7YxPO-9JYLhIVHYDE](https://play.google.com/store/apps/details?id=app.mxm.knowu&hl=en-US&ah=AiHcSzx6-s7YxPO-9JYLhIVHYDE) to update.
-![Updating KnowU Android app when new updates come](/media/android-update-example.jpg)
+### Step 2: Tap the Menu
+Tap the **three vertical dots (⋮)** in the top-right corner of Chrome (or look for the "Install app" prompt in the address bar).
+
+### Step 3: Select "Install app" or "Add to Home screen"
+From the dropdown menu, select **Install app** (or **Add to Home screen**).
+
+### Step 4: Confirm Installation
+Tap **Install** in the confirmation dialog. KnowU will be added to your home screen and app launcher!
+
+<div style="margin: 2.5rem 0 1rem; text-align: center;">
+  <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-secondary">Launch KnowU Web App &rarr;</a>
+</div>
