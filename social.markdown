@@ -86,7 +86,7 @@ permalink: /social/
 </div>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
-<script async defer src="https://www.instagram.com/embed.js"></script>
+<script defer src="https://www.instagram.com/embed.js" id="instagram-embed-script"></script>
 <script>
 (function() {
   function processInstagram() {
@@ -95,25 +95,32 @@ permalink: /social/
     }
   }
 
-  // Run on window load
-  window.addEventListener('load', processInstagram);
+  var script = document.getElementById('instagram-embed-script');
+  if (script) {
+    script.addEventListener('load', function() {
+      processInstagram();
+      setTimeout(processInstagram, 200);
+    });
+  }
 
-  // Run on pageshow (handles back/forward navigation and BFCache)
-  window.addEventListener('pageshow', function(e) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      processInstagram();
+      setTimeout(processInstagram, 200);
+    });
+  } else {
     processInstagram();
+  }
+
+  window.addEventListener('load', function() {
+    processInstagram();
+    setTimeout(processInstagram, 200);
   });
 
-  // Polling loop to handle cache/asynchronous race conditions
-  var attempts = 0;
-  var interval = setInterval(function() {
-    attempts++;
-    if (window.instgrm && window.instgrm.Embeds) {
-      processInstagram();
-      clearInterval(interval);
-    } else if (attempts > 30) { // Stop polling after 3 seconds
-      clearInterval(interval);
-    }
-  }, 100);
+  window.addEventListener('pageshow', function() {
+    processInstagram();
+    setTimeout(processInstagram, 200);
+  });
 })();
 </script>
 
