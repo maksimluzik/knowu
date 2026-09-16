@@ -12,7 +12,10 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
 
 <div class="screenshot-showcase">
   <div class="screenshot-showcase__phone">
-    <img src="/media/screenshots/home.png" alt="KnowU Home Screen" loading="lazy" />
+    <picture>
+      <source srcset="/media/screenshots/home.webp" type="image/webp">
+      <img src="/media/screenshots/home.png" alt="KnowU Home Screen" width="200" height="365" decoding="async" />
+    </picture>
   </div>
   <div class="screenshot-showcase__content">
     <h3>Your Personality, Fully Decoded</h3>
@@ -28,13 +31,11 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
     <p class="intro-video-section__subtext">A quick look at how KnowU helps you discover, understand, and reflect on who you are.</p>
     <div class="intro-video-section__player">
       <div class="responsive-div">
-        <iframe
-          src="https://www.youtube.com/embed/zxIDe3h-FjY?rel=0&modestbranding=1&enablejsapi=1"
-          title="KnowU Introduction Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
+        <div class="youtube-facade" data-video-id="zxIDe3h-FjY" data-video-title="KnowU Introduction Video" role="button" tabindex="0" aria-label="Play KnowU Introduction Video" style="background-image: url('/media/video-thumbnail.webp');">
+          <button type="button" class="youtube-facade__play" aria-label="Play KnowU Introduction Video" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="6,3 20,12 6,21"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -249,10 +250,13 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
 
 <div class="platform-cards">
   <div class="platform-card platform-card--pwa" data-open-pwa="ios" role="region" aria-label="iOS Web App (PWA) installation">
-    <h4>iOS</h4>
+    <h3>iOS</h3>
     <p class="platform-card__status">Coming soon</p>
     <div class="platform-card__badge-wrapper">
-      <img alt="Download on the App Store" src="/media/badges/ios.png" loading="lazy" />
+      <picture>
+        <source srcset="/media/badges/ios.webp" type="image/webp">
+        <img alt="Download on the App Store" src="/media/badges/ios.png" width="175" height="175" loading="lazy" />
+      </picture>
     </div>
     <div class="platform-card__actions">
       <button type="button" class="btn-pwa-trigger" data-open-pwa="ios" aria-haspopup="dialog" aria-controls="pwa-modal">
@@ -264,10 +268,13 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
   </div>
 
   <div class="platform-card platform-card--pwa" data-open-pwa="android" role="region" aria-label="Android Web App (PWA) installation">
-    <h4>Android</h4>
+    <h3>Android</h3>
     <p class="platform-card__status">Coming soon</p>
     <div class="platform-card__badge-wrapper">
-      <img alt="Get it on Google Play" src="/media/badges/android.png" loading="lazy" />
+      <picture>
+        <source srcset="/media/badges/android.webp" type="image/webp">
+        <img alt="Get it on Google Play" src="/media/badges/android.png" width="175" height="175" loading="lazy" />
+      </picture>
     </div>
     <div class="platform-card__actions">
       <button type="button" class="btn-pwa-trigger" data-open-pwa="android" aria-haspopup="dialog" aria-controls="pwa-modal">
@@ -279,11 +286,14 @@ keywords: "personality test, self-assessment, peer feedback, Myers-Briggs, DISC,
   </div>
 
   <div class="platform-card">
-    <h4>Web</h4>
+    <h3>Web</h3>
     <p class="platform-card__status platform-card__status--live">Available Now</p>
     <div class="platform-card__badge-wrapper">
       <a href="https://web.knowu.app" target="_blank" rel="noopener" title="Open KnowU Web App">
-        <img alt="Open in Browser" src="/media/badges/web.png" loading="lazy" />
+        <picture>
+          <source srcset="/media/badges/web.webp" type="image/webp">
+          <img alt="Open in Browser" src="/media/badges/web.png" width="175" height="175" loading="lazy" />
+        </picture>
       </a>
     </div>
     <div class="platform-card__actions">

@@ -54,10 +54,15 @@
   <link rel="icon" href="/media/know-u-icon-round.png" type="image/x-icon">
   <link rel="apple-touch-icon" href="/media/know-u-icon-round.png">
   
-  <!-- Google Fonts — Open Sans with extended weights -->
+  <!-- Google Fonts — Open Sans with extended weights (non-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+  </noscript>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   
   <!-- JSON-LD Structured Data -->
@@ -197,5 +202,6 @@
     </script>
     {% include pwa-modal.html %}
     <script src="{{ '/assets/js/pwa-modal.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+    <script src="{{ '/assets/js/youtube-facade.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
