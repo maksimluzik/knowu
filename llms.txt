@@ -1,0 +1,37 @@
+# KnowU
+
+> KnowU is an AI-powered personality-insights platform combining multi-signal self-assessments, peer feedback, moral dilemmas, and AI coaching across MBTI, DISC, and Big Five frameworks.
+
+KnowU provides individuals, teams, coaches, and managers with evidence-based personality intelligence for personal growth, GROW coaching plans, and conflict prevention. The platform is accessible via web browsers, iOS (Apple TestFlight), and Android (Google Play internal testing / Progressive Web App).
+
+## Core Pages
+- [KnowU Home](https://knowu.app/): Main landing page with platform overview, key value propositions, audience entryways, and app access.
+- [For Individuals](https://knowu.app/individual/): Comprehensive guide to individual features — Moral Compass, Ask Friends peer feedback, Ask AI coaching, and trait self-reflection.
+- [For Business & Teams](https://knowu.app/business/): Team development, GROW coaching framework, 1:1 check-in guides, and Friedrich Glasl's 9-stage conflict escalation prevention model.
+- [Pricing & Plans](https://knowu.app/pricing/): Comparison of Free (€0), Professional (€10/mo), and Teams plans with frequently asked questions.
+- [Social & Community](https://knowu.app/social/): Official community channels on Instagram (@knowu.official) and Facebook (knowu.official).
+- [Security & Compliance](https://knowu.app/compliance/): Data security practices, encryption in transit and at rest, and GDPR governance.
+- [iOS Installation Guide](https://knowu.app/ios/): Instructions for installing KnowU on iOS via Apple TestFlight or as a Progressive Web App (PWA).
+- [Android Installation Guide](https://knowu.app/android/): Instructions for installing KnowU on Android via Google Play internal testing or as a Progressive Web App (PWA).
+- [Join Beta & Friends](https://knowu.app/join/): Beta testing program signup and community access.
+- [Web Application](https://web.knowu.app): Launch the live KnowU web application.
+
+## Psychological Frameworks & Features
+- [15 Traits & Models](https://knowu.app/individual/#analytics): Detailed breakdown of personality traits across Myers-Briggs (MBTI), DISC, and Big Five (Agreeableness).
+- [Moral Compass](https://knowu.app/individual/#moral-compass): Daily swipe-based ethical dilemmas revealing behavioral and moral tendencies.
+- [Ask Friends & Social Games](https://knowu.app/individual/#ask-friends): Structured 360-degree peer feedback, Blind Reveal honesty games, and Who's Most Likely voting.
+- [Ask AI Coaching](https://knowu.app/individual/#ask-ai): Personality-aware AI assistant equipped with context of self-scores, peer ratings, and ethical choices.
+- [Trait Self-Reflection](https://knowu.app/individual/#traits-self-reflection): Interactive 1–10 sliders and reflection journals to compare self-image against AI and peer evaluations.
+
+## For Organizations & Teams
+- [GROW Coaching Framework](https://knowu.app/business/#grow-coaching): Goal, Reality, Options, and Will coaching sessions powered by objective personality metrics.
+- [Conflict Escalation Prevention](https://knowu.app/business/#conflict-prevention): Proactive workplace friction detection mapped across Friedrich Glasl's 9 stages of conflict.
+- [Development Discussions](https://knowu.app/business/#development-discussions): Structured 1:1 check-in agendas and blind spot discovery.
+- [Team Dynamics Mapping](https://knowu.app/business/#team-composition): Team-wide personality distribution analysis and collaboration optimization.
+
+## Legal & Governance
+- [Privacy Policy](https://knowu.app/privacy-policy/): GDPR compliance, data collection rules, social media insights policy, and user rights.
+- [Terms of Service](https://knowu.app/terms-of-service/): Platform usage rules, subscriptions, liability, and service agreements.
+
+## Optional
+- [Full Documentation (llms-full.txt)](https://knowu.app/llms-full.txt): Complete, unabridged documentation with detailed trait descriptions and architectural context for AI agents.

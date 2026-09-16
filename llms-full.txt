@@ -1,0 +1,131 @@
+# KnowU — Full Platform Documentation & AI Agent Reference
+
+> KnowU is an evidence-based personality-insights platform designed for personal self-discovery, continuous professional growth, and team development. Rather than relying on a single static questionnaire, KnowU triangulates multi-signal data across self-assessments, moral dilemma choices, peer feedback, social media analysis, and personality-aware AI conversations.
+
+---
+
+## 1. Executive Summary & Core Value Proposition
+
+KnowU combines proven psychological frameworks with modern interactive workflows to deliver deep personal and team awareness:
+- **For Individuals**: Discover your baseline personality, compare your self-image with observations from friends and colleagues, engage in daily ethical reflection through the Moral Compass, and chat with an AI coach that understands your full psychological profile.
+- **For Teams & Businesses**: Equip managers, coaches, and HR leaders with structured GROW coaching tools, 1:1 check-in templates, and early-warning conflict indicators based on Friedrich Glasl’s 9-stage conflict escalation model.
+
+---
+
+## 2. Psychological Frameworks & The 15 Measured Traits
+
+KnowU evaluates users across 15 traits grounded in three established psychological systems:
+
+### 2.1 Myers-Briggs Type Indicator (MBTI)
+KnowU measures the four fundamental cognitive dimensions:
+1. **Extraversion vs. Introversion (E/I)**: Energy direction — recharging through social engagement versus quiet reflection.
+2. **Sensing vs. Intuition (S/N)**: Information processing — focusing on concrete facts and present realities versus patterns, concepts, and future possibilities.
+3. **Thinking vs. Feeling (T/F)**: Decision-making logic — prioritizing objective analysis and fairness versus personal values, empathy, and interpersonal harmony.
+4. **Judging vs. Perceiving (J/P)**: Lifestyle and work approach — structured, scheduled, and decisive versus flexible, spontaneous, and open-ended.
+
+### 2.2 DISC Behavioral Model
+KnowU evaluates real-world behavioral and communication styles:
+5. **Dominance (D)**: Directness, assertiveness, drive for results, and comfort with taking charge.
+6. **Influence (I)**: Sociability, enthusiasm, persuasiveness, and optimism in group interactions.
+7. **Steadiness (S)**: Patience, reliability, cooperativeness, and calm consistency under pressure.
+8. **Conscientiousness (C)**: Precision, analytical rigor, attention to quality, and adherence to high standards.
+
+### 2.3 Big Five Model (Agreeableness & Related Facets)
+KnowU measures social orientation and interpersonal dynamics:
+9. **Trust**: Propensity to assume good intentions in others and build constructive relationships.
+10. **Morality (Straightforwardness)**: Frankness, sincerity, and ethical consistency in actions.
+11. **Altruism**: Genuine desire to assist and empower peers without expecting reciprocal gain.
+12. **Cooperation (Compliance)**: Willingness to defer, reconcile, and resolve disputes constructively.
+13. **Modesty**: Humility and balanced self-regard without self-aggrandizement.
+14. **Sympathy (Tender-Mindedness)**: Compassion and emotional responsiveness toward others' needs.
+15. **Emotional Stability / Resilience**: Capacity to navigate stress and maintain equilibrium.
+
+---
+
+## 3. Multi-Signal Triangulation Architecture
+
+Unlike legacy personality tests that produce a static one-off label, KnowU triangulates data from five complementary signals:
+
+### 3.1 Self-Assessments & Card-Swipe Questionnaire
+- Users complete Likert-scale questions via an interactive card-swipe UI.
+- Questionnaires include general profiles and specialized modules such as *Leadership Material*.
+- Trait self-reflection sliders (1–10) allow users to explicitly declare how they perceive themselves and compare it against AI evaluations.
+
+### 3.2 The Moral Compass (Ethical Decision-Making)
+- Tinder-style swipe interface presenting ethical and moral scenarios.
+- Users choose binary decisions (Agree / Oppose) or Skip.
+- Decisions reveal underlying priorities (e.g., utilitarian versus deontological reasoning) and feed into trait score calibration.
+- Community and peer comparison statistics show how your ethical instincts compare to the broader population.
+
+### 3.3 Ask Friends (360-Degree Peer Feedback)
+- Users send targeted feedback requests to trusted friends, family, or colleagues.
+- Evaluators score traits on a 1–10 scale and provide written observations.
+- Discrepancy analysis highlights "blind spots" (where peer perception differs from self-ratings) and "hidden strengths" (where peers rate you higher than you rate yourself).
+- Social games:
+  - **Blind Reveal**: Group honesty game where anonymous peer feedback remains hidden until all participants submit their answers, then unlocks simultaneously.
+  - **Who's Most Likely**: Fun group polling game awarding trophies to members based on collective votes.
+
+### 3.4 Social Media Communication Analysis
+- Optional feature allowing users to paste public posts or communication snippets for AI-assisted linguistic analysis.
+- Evaluates tone, communication clarity, and DISC style markers.
+
+### 3.5 Ask AI (Personality-Aware Chatbot)
+- A private, confidential conversational AI assistant equipped with context of the user’s self-scores, peer ratings, moral dilemma choices, and reflection logs.
+- Acts as a personal development coach, offering advice on handling conflicts, improving communication with specific personality types, and preparing for difficult conversations.
+
+---
+
+## 4. For Organizations, Managers & Coaches
+
+KnowU for Teams transforms individual self-awareness into organizational health:
+
+### 4.1 GROW Coaching Model
+KnowU provides a structured interface to run coaching conversations based on Sir John Whitmore's GROW framework:
+- **G (Goal)**: Define clear personal and professional milestones aligned with natural motivators.
+- **R (Reality)**: Anchor conversations in objective data — self-scores vs. peer ratings and identified blind spots.
+- **O (Options)**: AI-suggested growth paths, behavioral adjustments, and communication tactics.
+- **W (Will / Way Forward)**: Specific commitments, milestones, and review dates tracked over time.
+
+### 4.2 Friedrich Glasl’s Conflict Escalation Prevention
+Workplace conflict is costly when left unaddressed. KnowU maps interpersonal dynamics against Friedrich Glasl’s 9 stages of conflict:
+- **Phase 1: Win/Win (Stages 1–3: Hardening, Debate/Polemic, Actions Instead of Words)**
+  - KnowU detects early communication friction and style mismatches (e.g., High-D vs. High-S) and suggests self-guided de-escalation before polarization occurs.
+- **Phase 2: Win/Lose (Stages 4–6: Images/Coalitions, Loss of Face, Strategies of Threats)**
+  - Suggests manager mediation and guided 1:1 alignment conversations.
+- **Phase 3: Lose/Lose (Stages 7–9: Limited Destructive Blows, Fragmentation, Together into the Abyss)**
+  - Identifies systemic team breakdown requiring external intervention.
+
+### 4.3 Team Composition & Dynamics Mapping
+- Aggregate radar and donut charts display the team's behavioral balance across DISC and MBTI axes.
+- Identifies single points of friction, blind spots in team problem-solving, and missing perspectives.
+
+---
+
+## 5. Pricing & Plan Tiers
+
+KnowU offers three transparent pricing tiers:
+
+| Tier | Price | Audience | Features Included |
+|---|---|---|---|
+| **Free** | €0 / month | Individuals exploring self-discovery | Core personality assessment, 15 trait scores with AI summary, Moral Compass ethical dilemmas, 3 peer feedback requests/month, 10 AI chat interactions/month. |
+| **Professional** | €10 / user / month | Professionals, coaches, active growth seekers | Everything in Free, plus: Unlimited peer feedback requests, unlimited Ask AI coaching, complete growth history tracking, Leadership Material assessment, social media style analysis, PDF profile exports. |
+| **Teams** | Custom pricing (Min. 3 users) | Managers, HR leaders, organizations | Everything in Professional, plus: GROW coaching templates, team dynamics mapping, manager 1:1 views, Glasl conflict tracking, centralized administration, SSO integration, dedicated database isolation, priority onboarding. |
+
+---
+
+## 6. Applications & Supported Platforms
+
+KnowU is available across major platforms:
+- **Web Application**: Access immediately via modern browsers at [https://web.knowu.app](https://web.knowu.app).
+- **iOS App (Beta)**: Available via Apple TestFlight. Can also be installed as a Progressive Web App (PWA) on iPhone/iPad by tapping "Share" -> "Add to Home Screen" in Safari.
+- **Android App (Beta)**: Available via Google Play Internal Testing. Can also be installed as a Progressive Web App (PWA) on Chrome by tapping "Install app" or "Add to Home Screen".
+
+---
+
+## 7. Security, Privacy & Data Governance
+
+- **Encryption**: All data is encrypted in transit using TLS 1.3 and at rest using AES-256 encryption.
+- **GDPR Compliance**: Full compliance with the European General Data Protection Regulation (GDPR). Users retain complete rights to access, export, or delete their personal data at any time.
+- **Peer Feedback Confidentiality**: Peer evaluations and comments are strictly controlled by the requester. Anonymous games (such as Blind Reveal) protect evaluator identity until collective reveal conditions are satisfied.
+- **Hosting & Infrastructure**: Deployed on secure cloud infrastructure with isolated database options for enterprise team accounts.
+- **Contact & Support**: Email `support@knowu.app` for inquiries, account assistance, or compliance audits.

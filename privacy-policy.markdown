@@ -6,8 +6,6 @@ keywords: "KnowU privacy policy, data protection, personal information security"
 permalink: /privacy-policy/
 ---
 
-# Privacy Policy for KnowU
-
 ## 1. Introduction
 MXM Consulting ("Company") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, and share your information when you use the KnowU application ("App").
 

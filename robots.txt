@@ -1,21 +1,47 @@
+# robots.txt for https://knowu.app
+# RFC 9309 compliant
+# Sitemaps & AI / Agentic Directives (https://llmstxt.org)
+
 User-agent: *
 Allow: /
+Disallow: /scrapers/
+Disallow: /_site/
+Disallow: /.git/
 
-# Specific directives for major search engines
+# Major Search Engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-# Disallow scrapers and test directories
-User-agent: *
-Disallow: /scrapers/
-Disallow: /_site/
-Disallow: /.git/
+# AI Search & Conversational Agents
+User-agent: GPTBot
+Allow: /
 
-# Sitemap location
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
 Sitemap: https://knowu.app/sitemap.xml
-
-# Crawl delay (optional, be considerate to smaller crawlers)
-Crawl-delay: 1

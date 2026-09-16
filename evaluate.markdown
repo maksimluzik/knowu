@@ -1,6 +1,8 @@
 ---
 layout: page
 title: An acquaintance has asked you to evaluate this question
+description: "Evaluate a peer feedback request on KnowU. Share confidential, constructive observations to support personal self-discovery and growth."
+keywords: "KnowU evaluation, peer feedback, trait rating, personal growth, self-assessment"
 permalink: /evaluate/
 ---
 

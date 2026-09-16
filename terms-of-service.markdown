@@ -6,8 +6,6 @@ keywords: "KnowU terms of service, user agreement, legal terms"
 permalink: /terms-of-service/
 ---
 
-# Terms of Service for KnowU
-
 ## 1. Acceptance of Terms
 By signing up, registering for an account, or otherwise accessing or using the KnowU application ("App"), operated by MXM Consulting ("Company"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the App.
 

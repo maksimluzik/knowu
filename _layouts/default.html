@@ -36,11 +36,19 @@
   <meta name="twitter:image" content="{{ site.url }}/media/know-u-banner-logo.png">
   
   <!-- Additional SEO Meta Tags -->
-  <meta name="robots" content="index, follow">
+  {% if page.robots %}
+    <meta name="robots" content="{{ page.robots }}">
+  {% else %}
+    <meta name="robots" content="index, follow">
+  {% endif %}
   <meta name="author" content="MXM Consulting">
   <meta name="language" content="EN">
   <meta name="revisit-after" content="7 days">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  
+  <!-- Agentic AI & LLM Context (https://llmstxt.org) -->
+  <link rel="alternate" type="text/markdown" href="{{ '/llms.txt' | absolute_url }}" title="LLM Context">
+  <link rel="alternate" type="text/markdown" href="{{ '/llms-full.txt' | absolute_url }}" title="Full LLM Documentation">
   
   <!-- Favicon and Icons -->
   <link rel="icon" href="/media/know-u-icon-round.png" type="image/x-icon">
@@ -56,22 +64,52 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "applicationCategory": "PersonalityAssessmentApplication",
-    "operatingSystem": "Web, iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "creator": {
-      "@type": "Organization",
-      "name": "MXM Consulting",
-      "url": "{{ site.url }}"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description | strip_newlines | escape }}",
+        "publisher": {
+          "@id": "{{ site.url }}/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization",
+        "name": "{{ site.title }}",
+        "legalName": "MXM Consulting",
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/media/know-u-icon-round.png"
+        },
+        "sameAs": [
+          "https://www.instagram.com/knowu.official/",
+          "https://www.facebook.com/knowu.official",
+          "https://github.com/maksimluzik/knowu"
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "{{ site.url }}/#webapp",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description | strip_newlines | escape }}",
+        "url": "https://web.knowu.app",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "browserRequirements": "Requires JavaScript, HTML5",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "creator": {
+          "@id": "{{ site.url }}/#organization"
+        }
+      }
+    ]
   }
   </script>
   
@@ -86,10 +124,10 @@
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-audience-badge">For Individuals &amp; Teams</div>
-        <div class="hero-headline">
+        <h1 class="hero-headline">
           <span class="hero-headline-white">Know Yourself.</span><br>
           <span class="hero-headline-gradient">Grow Together.</span>
-        </div>
+        </h1>
         <p class="hero-subtitle">Unlock deep personality insights across MBTI, DISC &amp; Big Five — for personal growth, better team dynamics, GROW coaching, and conflict-free workplaces.</p>
         <div class="hero-cta">
           <a href="https://web.knowu.app" target="_blank" rel="noopener" class="btn btn-primary">Discover Your Personality</a>

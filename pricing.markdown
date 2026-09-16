@@ -4,6 +4,7 @@ title: "Pricing"
 description: "KnowU pricing — Free for personal use, Professional for individuals and coaches, Teams for organisations running GROW coaching and development programmes."
 keywords: "KnowU pricing, personality app pricing, team personality tool pricing, GROW coaching tool cost, professional personality assessment"
 permalink: /pricing/
+hide_title: true
 ---
 
 <div class="pricing-header">

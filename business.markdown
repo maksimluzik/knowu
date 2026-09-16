@@ -4,6 +4,7 @@ title: "For Business"
 description: "KnowU for Teams — empower managers and HR leaders with deep personality insights for GROW coaching plans, structured development discussions, and Friedrich Glasl's conflict escalation prevention. Build self-aware, high-performing teams."
 keywords: "KnowU business, team personality insights, GROW coaching, development discussions, conflict prevention, Glasl model, HR tools, leadership development, team dynamics, personality assessment for teams"
 permalink: /business/
+hide_title: true
 ---
 
 <div class="business-hero">
