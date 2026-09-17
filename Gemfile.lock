@@ -15,6 +15,7 @@ GEM
     ffi (1.17.0-arm-linux-gnu)
     ffi (1.17.0-arm-linux-musl)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x64-mingw-ucrt)
     ffi (1.17.0-x86-linux-gnu)
     ffi (1.17.0-x86-linux-musl)
     ffi (1.17.0-x86_64-darwin)
@@ -80,7 +81,13 @@ GEM
     strscan (3.1.0)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.11)
+      thread_safe (~> 0.1)
+    tzinfo-data (1.2026.4)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
+    wdm (0.2.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -90,6 +97,7 @@ PLATFORMS
   arm-linux-musl
   arm64-darwin
   ruby
+  x64-mingw-ucrt
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -106,7 +114,7 @@ DEPENDENCIES
   minima (~> 2.5)
   tzinfo (~> 1.2)
   tzinfo-data
-  wdm (~> 0.1.1)
+  wdm (>= 0.1.1)
   webrick (~> 1.7)
 
 BUNDLED WITH
